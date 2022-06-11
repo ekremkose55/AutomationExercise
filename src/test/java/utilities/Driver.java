@@ -8,24 +8,24 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Driver {
 
-    //create a driver instance
-    private static WebDriver driver;
-    private static int timeout = 5;
+    //Driver class, driver instance'i baslatmak icin kullanilir.(Sinngleton Driver)
+    //Ihtiyacimiz oldugunda driver'i kurmak ve baslatmak icin kullaniriz.
+    //Driver null oldugunda create edip baslatacagiz.(if driver==null)
+    //Driver classi farkli browserlar(tarayici) ile de kullanacagimiz sekilde olusturacagiz.
 
-    //What?=>It is just to create, initialize the driver instance.(Singleton driver)
-    //Why?=>We don't want to create and initialize the driver when we don't need
-    //We will create and initialize the driver when it is null
-    //We can use Driver class with different browser(chrome,firefox,headless)
-    private Driver() {
-        //we don't want to create another abject. Singleton pattern
+    private Driver(){  // parametresiz bir driver constructor olusturduk ki baska bir sebeple kullanilmasin!!!
+        // Baska obje olusturulmasini istemedigimiz icin create ediyoruz.
     }
 
-    //to initialize the driver we create a static method
-    public static WebDriver getDriver() {
-        //create the driver if and only if it is null
-        if (driver == null) {
+    //driver instance olusturalim
+    static WebDriver driver;  // static olmali ki butun class'lar icin kullanabilelim
+    //driver'i baslatmak icin statik bir method olusturalim
+    public static WebDriver getDriver(){
+        if(driver==null){  //  driver null olmasi kosuluyla calisacak.
             String browser = ConfigurationReader.getProperty("browser");
             if ("chrome".equals(browser)) {
                 WebDriverManager.chromedriver().setup();
@@ -39,9 +39,22 @@ public class Driver {
             } else if ("safari".equals(browser)) {
                 WebDriverManager.getInstance(SafariDriver.class).setup();
                 driver = new SafariDriver();
-            } else if ("chrome-headless".equals(browser)) {
+            } else if ("headless-chrome".equals(browser)) {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
             }
+
         }
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        return driver;
     }
+//    public static void closedDriver(){
+//        if(driver!=null){  //Eger driver chrome'u isaret ediyorsa
+//            driver.quit();   // driver'i kapat!
+//            driver=null;  // driver'in null oldugundan emin olmak icin tekrar null olarak assign ettik ki
+//            // tekrar null olarak baslayabilelim.
+//        }                 // Multi browser (chrome,firefox,ie vb) test yaparken bu onemli olacaktir
+//    }
+
+}
