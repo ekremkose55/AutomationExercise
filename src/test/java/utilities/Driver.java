@@ -3,12 +3,16 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
 
 public class Driver {
 
@@ -49,12 +53,13 @@ public class Driver {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
-//    public static void closedDriver(){
-//        if(driver!=null){  //Eger driver chrome'u isaret ediyorsa
-//            driver.quit();   // driver'i kapat!
-//            driver=null;  // driver'in null oldugundan emin olmak icin tekrar null olarak assign ettik ki
-//            // tekrar null olarak baslayabilelim.
-//        }                 // Multi browser (chrome,firefox,ie vb) test yaparken bu onemli olacaktir
-//    }
+    public static void closedDriver(){
+        if(driver!=null){  //Eger driver chrome'u isaret ediyorsa
+            driver.quit();   // driver'i kapat!
+            driver=null;  // driver'in null oldugundan emin olmak icin tekrar null olarak assign ettik ki
+            // tekrar null olarak baslayabilelim.
+        }                 // Multi browser (chrome,firefox,ie vb) test yaparken bu onemli olacaktir
+    }
+
 
 }
