@@ -1,6 +1,7 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,6 +16,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+
 
 public class Driver {
     private static int timeout = 5;
@@ -113,6 +129,7 @@ public class Driver {
         }
         return null;
     }
+
 
 
     //Webdriver
@@ -290,6 +307,27 @@ public class Driver {
     public static void navigateToUrl(String url){
         Driver.getDriver().get(url);
     }
+
+    //Driver class, driver instance'i baslatmak icin kullanilir.(Sinngleton Driver)
+    //Ihtiyacimiz oldugunda driver'i kurmak ve baslatmak icin kullaniriz.
+    //Driver null oldugunda create edip baslatacagiz.(if driver==null)
+    //Driver classi farkli browserlar(tarayici) ile de kullanacagimiz sekilde olusturacagiz.
+
+
+
+
+
+
+
+    public static void closedDriver(){
+        if(driver!=null){  //Eger driver chrome'u isaret ediyorsa
+            driver.quit();   // driver'i kapat!
+            driver=null;  // driver'in null oldugundan emin olmak icin tekrar null olarak assign ettik ki
+            // tekrar null olarak baslayabilelim.
+        }                 // Multi browser (chrome,firefox,ie vb) test yaparken bu onemli olacaktir
+    }
+
+
 
 }
 
