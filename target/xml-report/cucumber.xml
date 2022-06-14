@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.24">
-<testcase classname="Login page" name="TC01 Launch browser" time="16.99">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="45.304">
+<testcase classname="Contact Us Form" name="TC06 Contact Us Form" time="44.577">
 <system-out><![CDATA[Given Navigate to url 'http://automationexercise.com'.......................passed
 When Verify that home page is visible successfully..........................passed
-When Click on 'Signup / Login' button.......................................passed
-When Verify 'New User Signup!' is visible...................................passed
-When Enter name and already registered email address........................passed
-When Click 'Signup' button..................................................passed
-Then Verify error 'Email Address already exist!' is visible.................passed
+When Click on 'Contact Us' button sign......................................passed
+When Verify 'GET IN TOUCH' is visible text..................................passed
+When Enter name, email, subject and message.................................passed
+When Upload file............................................................passed
+When Click 'Submit' button sign.............................................passed
+When Click OK button........................................................passed
+When Verify success message 'Success! Your details have been submitted successfully.' is visible.passed
+Then Click 'Home' button and verify that landed to home page successfully...passed
 ]]></system-out>
 </testcase>
 </testsuite>

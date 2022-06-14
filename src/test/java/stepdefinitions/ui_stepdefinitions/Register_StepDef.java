@@ -40,4 +40,49 @@ public class Register_StepDef {
     public void verify_error_is_visible(String string) {
     Assert.assertTrue(registrationPage.emailVerifyText.isDisplayed()); }
 
+    @When("Click on {string} button sign")
+    public void click_on_button_sign(String string) {
+    registrationPage.contactUsButton.click();
+    }
+
+    @When("Verify {string} is visible text")
+    public void verify_is_visible_text(String string) {
+    Assert.assertTrue(registrationPage.getInTouchText.isDisplayed());
+    }
+
+    @When("Enter name, email, subject and message")
+    public void enter_name_email_subject_and_message() {
+    registrationPage.nameTestBox.sendKeys(ConfigurationReader.getProperty("test_name"));
+    registrationPage.emailTestBox.sendKeys(ConfigurationReader.getProperty("test_email"));
+    registrationPage.subjectTestBox.sendKeys(ConfigurationReader.getProperty("test_subject"));
+    registrationPage.messageTestBox.sendKeys(ConfigurationReader.getProperty("test_text"));
+
+    }
+
+    @When("Upload file")
+    public void upload_file() {
+
+    }
+
+    @When("Click {string} button sign")
+    public void click_button_sign(String string) {
+
+    }
+    @When("Click OK button")
+    public void click_ok_button() {
+
+
+    }
+
+    @When("Verify success message {string} is visible")
+    public void verify_success_message_is_visible(String string) {
+    }
+
+    @Then("Click {string} button and verify that landed to home page successfully")
+    public void click_button_and_verify_that_landed_to_home_page_successfully(String string) {
+
+
+    }
+
+
 }
