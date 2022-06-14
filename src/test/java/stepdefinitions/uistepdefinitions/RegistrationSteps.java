@@ -14,10 +14,8 @@ public class RegistrationSteps {
 
     @Given("user goes to the url {string}")
     public void userGoesToTheUrl(String url) {
-
         Driver.navigateToUrl(url);
     }
-
 
 
     @Given("user verify home page is visibly")
@@ -32,12 +30,10 @@ public class RegistrationSteps {
         Driver.waitAndClick(registrationPage.signupButton);
     }
 
-
     @Then("user verify {string} is visible")
     public void user_verify_is_visible(String string) {
         Assert.assertTrue(registrationPage.verifyNewUserSignup.isDisplayed());
     }
-
 
     @And("user enter name and email as {string} , {string}")
     public void userEnterNameAndEmailAs(String name, String email) {
@@ -56,7 +52,6 @@ public class RegistrationSteps {
         Driver.waitAndClick(registrationPage.verifySignup);
 
     }
-
 
 
     @Then("verify {string} is visible")
