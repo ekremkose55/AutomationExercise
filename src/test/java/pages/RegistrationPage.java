@@ -29,8 +29,6 @@ public class RegistrationPage {
     @FindBy(xpath = "(//input[@name='email'])[2]")
     public WebElement email;
 
-//    @FindBy(name = "email")
-//    public WebElement email;
 
     @FindBy(xpath = "//*[text()='Signup']")
     public WebElement verifySignup;
