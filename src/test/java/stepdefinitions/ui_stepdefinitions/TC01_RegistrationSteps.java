@@ -46,14 +46,11 @@ public class TC01_RegistrationSteps {
 
     }
 
-
     @Then("user click Signup button")
     public void userClickSignupButton() {
         Driver.waitAndClick(registrationPage.verifySignup);
 
     }
-
-
 
     @Then("verify {string} is visible")
     public void verify_is_visible(String string) {
