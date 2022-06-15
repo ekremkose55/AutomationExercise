@@ -20,8 +20,11 @@ public class ProductDetailPage {
     @FindBy(xpath = "//*[text()='View Cart']")
     public WebElement viewCart;
 
-    @FindBy(xpath = "(//button[@class='disabled'])[2]")
+    @FindBy(xpath = "(//button[@class='disabled'])[1]")
     public WebElement exactQuantity;
+
+    @FindBy(xpath = "(//button[@class='disabled'])[1]")
+    public WebElement cartQuantity;
 
 
 

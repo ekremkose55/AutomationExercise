@@ -11,13 +11,12 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
-
                 "rerun:target/failedRerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         features = "./src/test/resources/features",//MUST
-        glue = "stepdefinitions",//MUST
-        tags = " @UIregisteration",
+        glue = {"stepdefinitions","hooks"},//MUST
+        tags = "@TC13",
         dryRun = false
 
 )
