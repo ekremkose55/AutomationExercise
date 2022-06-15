@@ -29,7 +29,6 @@ public class ProductsPage {
 
     }
 
-
     public boolean cartPrice(int num) {
         String cartPriceLocator = "(//tr[@id='product-" + num + "']//p)[2]";
         WebElement cartPriceElement = Driver.getDriver().findElement(By.xpath(cartPriceLocator));
@@ -47,6 +46,30 @@ public class ProductsPage {
 
     @FindBy(xpath = "(//button[@class='disabled'])[2]")
     public WebElement secondQuantity;
+
+    @FindBy(xpath = "//a[@href='/products']")
+    public WebElement productsButton;
+
+    @FindBy(xpath = "//div[@class='brands_products']")
+    public WebElement brands;
+
+    @FindBy(xpath = "//a[@href='/brand_products/Polo']")
+    public WebElement poloBrand;
+
+    @FindBy(xpath = "//a[@href='/brand_products/Madame']")
+    public WebElement madameBrand;
+
+    @FindBy(xpath = "//h2[@class='title text-center']")
+    public WebElement brandProductsTitle;
+
+
+
+
+
+
+
+
+
 
 
 }
