@@ -47,8 +47,24 @@ public class ProductsPage {
     @FindBy(xpath = "(//button[@class='disabled'])[2]")
     public WebElement secondQuantity;
 
-    @FindBy(xpath = "//a[@href='/products']")
+
+    @FindBy(xpath = "//*[contains(text(), ' Products')]")
     public WebElement productsButton;
+
+    @FindBy(xpath = "//*[text()='View Cart']")
+    public WebElement viewCart;
+
+    @FindBy(xpath = "//*[text()='Shopping Cart']")
+    public WebElement verifyCartPage;
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    public WebElement xButton;
+
+    @FindBy(xpath = "//*[text()='Cart is empty!']")
+    public WebElement verifyEmptyCart;
+
+//    @FindBy(xpath = "//a[@href='/products']")
+//    public WebElement productsButton;
 
     @FindBy(xpath = "//div[@class='brands_products']")
     public WebElement brands;
@@ -61,14 +77,6 @@ public class ProductsPage {
 
     @FindBy(xpath = "//h2[@class='title text-center']")
     public WebElement brandProductsTitle;
-
-
-
-
-
-
-
-
 
 
 
