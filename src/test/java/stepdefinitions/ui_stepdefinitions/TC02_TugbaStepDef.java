@@ -20,6 +20,7 @@ public class TC02_TugbaStepDef {
 
         Assert.assertTrue(loginPage.verifyLogin.isDisplayed());
     }
+
     @Then("user enter correct email and password as {string} , {string}")
     public void user_enter_correct_email_and_password_as(String emailAddress, String password) {
         Driver.waitAndSendText(loginPage.emailAddress,emailAddress);
