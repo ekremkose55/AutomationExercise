@@ -1,5 +1,6 @@
 Feature: Logout User
 
+  @logoutUser
   Scenario Outline:
     Given user goes to the url "https://www.automationexercise.com"
     And user verify home page is visibly
