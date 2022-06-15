@@ -20,10 +20,8 @@ Feature: Registration
   When user click Delete Account button
   Then verify Account Deleted! is visible and click continue
  Examples:
- |name     |email                |title|password|day|month|year|firstname|lastname|company   |address1        |address2 |country|state|city  |zipcode     |mobileNumber|
- |Alex Prit|alexprit345@gmail.com|Mr  |abc321  |24 |July| 1996|Alex     |Prit    |Deeps Bank|60 grantbrook st|55 nepean|Canada |ON   |Ottawa|    35689   | 123456789  |
-#   |name         |email                  |title|password|day|month|year|firstname|lastname|company   |address1        |address2 |country|state|city  |zipcode     |mobileNumber|
-#   |Anna Karanina|annakaranina5@gmail.com|Mr  |abc321  |24 |July| 1996|Alex     |Prit    |Deeps Bank|60 grantbrook st|55 nepean|Canada |ON   |Ottawa|    35689   | 123456789  |
+  |country|state|city  |zipcode     | mobileNumber|
+  |Canada |ON   |Ottawa|    35689   | 123456789  |
 
 
 

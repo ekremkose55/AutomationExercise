@@ -48,6 +48,21 @@ public class ProductsPage {
     @FindBy(xpath = "(//button[@class='disabled'])[2]")
     public WebElement secondQuantity;
 
+    @FindBy(xpath = "//*[contains(text(), ' Products')]")
+    public WebElement productsButton;
+
+    @FindBy(xpath = "//*[text()='View Cart']")
+    public WebElement viewCart;
+
+    @FindBy(xpath = "//*[text()='Shopping Cart']")
+    public WebElement verifyCartPage;
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    public WebElement xButton;
+
+    @FindBy(xpath = "//*[text()='Cart is empty!']")
+    public WebElement verifyEmptyCart;
+
 
 }
 

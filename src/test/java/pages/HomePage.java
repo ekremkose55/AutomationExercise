@@ -52,6 +52,9 @@ public class HomePage {
          @FindBy(xpath = "//span[text()='Create a List']")
          public WebElement selectCreateList;
 
+         @FindBy(xpath = "//h2[text()='Full-Fledged practice website for Automation Engineers']")
+        public WebElement verifyFullFledged;
+
      }
 
 
