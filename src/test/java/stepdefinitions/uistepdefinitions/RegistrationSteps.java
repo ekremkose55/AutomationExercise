@@ -5,12 +5,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.RegistrationPage;
-import utilities.ConfigReader;
+import pages.Ekrem_Test_Page;
 import utilities.Driver;
 
 public class RegistrationSteps {
-    RegistrationPage registrationPage = new RegistrationPage();
+    Ekrem_Test_Page ekremTestPage = new Ekrem_Test_Page();
 
     @Given("user goes to the url {string}")
     public void userGoesToTheUrl(String url) {
@@ -22,27 +21,27 @@ public class RegistrationSteps {
 
     @Given("user verify home page is visibly")
     public void user_verify_home_page_is_visibly()  {
-        Assert.assertTrue(registrationPage.verifyHomePage.isDisplayed());
+        Assert.assertTrue(ekremTestPage.verifyHomePage.isDisplayed());
 
     }
 
     @When("user click {string} button")
     public void user_click_button(String string) {
 
-        Driver.waitAndClick(registrationPage.signupButton);
+        Driver.waitAndClick(ekremTestPage.signupButton);
     }
 
 
     @Then("user verify {string} is visible")
     public void user_verify_is_visible(String string) {
-        Assert.assertTrue(registrationPage.verifyNewUserSignup.isDisplayed());
+        Assert.assertTrue(ekremTestPage.verifyNewUserSignup.isDisplayed());
     }
 
 
     @And("user enter name and email as {string} , {string}")
     public void userEnterNameAndEmailAs(String name, String email) {
-        Driver.waitAndSendText(registrationPage.name,name);
-        Driver.waitAndSendText(registrationPage.email,email);
+        Driver.waitAndSendText(ekremTestPage.name,name);
+        Driver.waitAndSendText(ekremTestPage.email,email);
 
     }
 //    @Then("user enter name and email")
@@ -53,7 +52,7 @@ public class RegistrationSteps {
 
     @Then("user click Signup button")
     public void userClickSignupButton() {
-        Driver.waitAndClick(registrationPage.verifySignup);
+        Driver.waitAndClick(ekremTestPage.verifySignup);
 
     }
 
@@ -61,15 +60,15 @@ public class RegistrationSteps {
 
     @Then("verify {string} is visible")
     public void verify_is_visible(String string) {
-        Assert.assertTrue(registrationPage.verifyAccount.isDisplayed());
+        Assert.assertTrue(ekremTestPage.verifyAccount.isDisplayed());
     }
 
     @And("enter Title, Name, Email, Password, Date of Birth as {string} , {string} , {string} , {string} , {string}")
     public void enterTitleNameEmailPasswordDateOfBirthAs(String title, String name, String email, String password, String dateOfBirth) {
-        Driver.waitAndSendText(registrationPage.title,title);
-        Driver.waitAndSendText(registrationPage.name2,name);
-        Driver.waitAndSendText(registrationPage.email,email);
-        Driver.waitAndSendText(registrationPage.password,password);
+        Driver.waitAndSendText(ekremTestPage.title,title);
+        Driver.waitAndSendText(ekremTestPage.name2,name);
+        Driver.waitAndSendText(ekremTestPage.email,email);
+        Driver.waitAndSendText(ekremTestPage.password,password);
 
     }
 

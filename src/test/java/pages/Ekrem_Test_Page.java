@@ -5,10 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class RegistrationPage {
+public class Ekrem_Test_Page {
 
 
-    public RegistrationPage(){
+    public Ekrem_Test_Page(){
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
@@ -144,6 +144,9 @@ public class RegistrationPage {
 
     @FindBy(id = "message")
     public WebElement messageTestBox;
+
+    @FindBy(name = " upload_file")
+    public WebElement uploadFile;
 
 
 

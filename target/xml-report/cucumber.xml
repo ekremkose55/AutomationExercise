@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="45.304">
-<testcase classname="Contact Us Form" name="TC06 Contact Us Form" time="44.577">
-<system-out><![CDATA[Given Navigate to url 'http://automationexercise.com'.......................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="54.214">
+<testcase classname="Contact Us Form" name="TC06 Contact Us Form" time="53.233">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=' upload_file']&quot;}&#10;  (Session info: chrome=102.0.5005.63)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-6F4KRPQA', ip: '10.0.4.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ekrem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58591}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b558a74504760469182360aa795cd5d7&#10;*** Element info: {Using=name, value= upload_file}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate to url 'http://automationexercise.com'.......................passed
 When Verify that home page is visible successfully..........................passed
 When Click on 'Contact Us' button sign......................................passed
 When Verify 'GET IN TOUCH' is visible text..................................passed
 When Enter name, email, subject and message.................................passed
-When Upload file............................................................passed
-When Click 'Submit' button sign.............................................passed
-When Click OK button........................................................passed
-When Verify success message 'Success! Your details have been submitted successfully.' is visible.passed
-Then Click 'Home' button and verify that landed to home page successfully...passed
-]]></system-out>
+When Upload file............................................................failed
+When Click 'Submit' button sign.............................................skipped
+When Click OK button........................................................skipped
+When Verify success message 'Success! Your details have been submitted successfully.' is visible.skipped
+Then Click 'Home' button and verify that landed to home page successfully...skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name=' upload_file']"}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6F4KRPQA', ip: '10.0.4.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ekrem\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58591}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b558a74504760469182360aa795cd5d7
+*** Element info: {Using=name, value= upload_file}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at stepdefinitions.ui_stepdefinitions.Ekrem_StepDef.upload_file(Ekrem_StepDef.java:68)
+	at ✽.Upload file(file:///C:/Users/ekrem/IdeaProjects/AutomationExercise2022/./src/test/resources/features/ui_features/TC06_Ekrem.feature:9)
+]]></failure>
 </testcase>
 </testsuite>

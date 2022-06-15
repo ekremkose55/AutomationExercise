@@ -4,12 +4,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.RegistrationPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import pages.Ekrem_Test_Page;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class Register_StepDef {
-    RegistrationPage registrationPage = new RegistrationPage();
+public class Ekrem_StepDef {
+    Ekrem_Test_Page ekremTestPage = new Ekrem_Test_Page();
+    Driver driver;
 
     @Given("Navigate to url {string}")
     public void navigate_to_url(String string) {
@@ -17,51 +20,53 @@ public class Register_StepDef {
 
     @When("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
-    Assert.assertTrue(registrationPage.homePage.isDisplayed()); }
+    Assert.assertTrue(ekremTestPage.homePage.isDisplayed()); }
 
     @When("Click on {string} button")
     public void click_on_button(String string) {
-    registrationPage.signUp.click();}
+    ekremTestPage.signUp.click();}
 
     @When("Verify {string} is visible")
     public void verify_is_visible(String string) {
-    Assert.assertTrue(registrationPage.newUserSigUpText.isDisplayed()); }
+    Assert.assertTrue(ekremTestPage.newUserSigUpText.isDisplayed()); }
 
     @When("Enter name and already registered email address")
     public void enter_name_and_already_registered_email_address() {
-     registrationPage.nameBox.sendKeys(ConfigurationReader.getProperty("user_id1"));
-     registrationPage.emailBox.sendKeys(ConfigurationReader.getProperty("user_id1_mail")); }
+     ekremTestPage.nameBox.sendKeys(ConfigurationReader.getProperty("user_id1"));
+     ekremTestPage.emailBox.sendKeys(ConfigurationReader.getProperty("user_id1_mail")); }
 
     @When("Click {string} button")
     public void click_button(String string) {
-     registrationPage.signUpButton.click(); }
+     ekremTestPage.signUpButton.click(); }
 
     @Then("Verify error {string} is visible")
     public void verify_error_is_visible(String string) {
-    Assert.assertTrue(registrationPage.emailVerifyText.isDisplayed()); }
+    Assert.assertTrue(ekremTestPage.emailVerifyText.isDisplayed()); }
 
     @When("Click on {string} button sign")
     public void click_on_button_sign(String string) {
-    registrationPage.contactUsButton.click();
+    ekremTestPage.contactUsButton.click();
     }
 
     @When("Verify {string} is visible text")
     public void verify_is_visible_text(String string) {
-    Assert.assertTrue(registrationPage.getInTouchText.isDisplayed());
+    Assert.assertTrue(ekremTestPage.getInTouchText.isDisplayed());
     }
 
     @When("Enter name, email, subject and message")
     public void enter_name_email_subject_and_message() {
-    registrationPage.nameTestBox.sendKeys(ConfigurationReader.getProperty("test_name"));
-    registrationPage.emailTestBox.sendKeys(ConfigurationReader.getProperty("test_email"));
-    registrationPage.subjectTestBox.sendKeys(ConfigurationReader.getProperty("test_subject"));
-    registrationPage.messageTestBox.sendKeys(ConfigurationReader.getProperty("test_text"));
+    ekremTestPage.nameTestBox.sendKeys(ConfigurationReader.getProperty("test_name"));
+    ekremTestPage.emailTestBox.sendKeys(ConfigurationReader.getProperty("test_email"));
+    ekremTestPage.subjectTestBox.sendKeys(ConfigurationReader.getProperty("test_subject"));
+    ekremTestPage.messageTestBox.sendKeys(ConfigurationReader.getProperty("test_text"));
 
     }
 
     @When("Upload file")
     public void upload_file() {
-
+       String filePath = "C:\\Users\\ekrem\\Desktop\\automation exercise project";
+       ekremTestPage.uploadFile.sendKeys(filePath);
+       //sendKeys("C:\\Users\\ekrem\\Desktop\\automation exercise project");
     }
 
     @When("Click {string} button sign")
