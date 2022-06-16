@@ -12,7 +12,7 @@ import utilities.ReusableMethods;
 
 import java.sql.SQLOutput;
 
-public class US11_NurayStepDef {
+public class TC11_NurayStepDef {
 
     HomePage pageHome= new HomePage();
     Faker faker = new Faker();
@@ -32,6 +32,7 @@ public class US11_NurayStepDef {
     @And("User Click {string} button")
     public void userClickCartButton(String text) {
        // pageHome.cartButton.click();
+        ReusableMethods.waitFor(1);
         pageHome.homePageClick(text);
 
     }
@@ -74,6 +75,7 @@ public class US11_NurayStepDef {
          Assert.assertTrue(pageHome.subscriptionSuccessText.getText().contains("You have been successfully subscribed!"));
          Assert.assertTrue(pageHome.subscriptionSuccessText.isDisplayed());
 
+         Driver.getDriver().close();
     }
 
 

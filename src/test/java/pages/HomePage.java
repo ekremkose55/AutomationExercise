@@ -42,15 +42,15 @@ public class HomePage {
     public WebElement footerElement;
 
 
+    @FindBy(xpath = "//a[@id='scrollUp']")
+    public WebElement scrollUpArrow;
 
+         @FindBy(xpath = "(//h2)[1]")
+         public WebElement upTitle;
 
+    @FindBy(xpath = "//a//b")
+    public WebElement upAccountName;
 
-
-    @FindBy(xpath = "//div[@id='attach-popover-lgtbox']")
-         public WebElement noButtonProtectionAlert;
-
-         @FindBy(xpath = "//span[text()='Create a List']")
-         public WebElement selectCreateList;
 
      }
 

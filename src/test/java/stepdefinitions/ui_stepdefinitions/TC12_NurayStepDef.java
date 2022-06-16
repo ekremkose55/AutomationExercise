@@ -12,7 +12,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US12_NurayStepDef {
+public class TC12_NurayStepDef {
 
     static String price1;
     static String price2;
@@ -36,6 +36,8 @@ public class US12_NurayStepDef {
         Assert.assertTrue(productsPage.firstQuantity.getText().contains("1"));
         Assert.assertTrue(productsPage.secondQuantity.getText().contains("1"));
 
+        Driver.getDriver().close();
+
 
 
 
@@ -44,7 +46,7 @@ public class US12_NurayStepDef {
 
     @Then("User login the app")
     public void userLoginTheApp() {
-        loginPage.emailInput.sendKeys(ConfigReader.getProperty("email"));
+        loginPage.emailInput1.sendKeys(ConfigReader.getProperty("email"));
         ReusableMethods.waitFor(1);
         loginPage.passwordInput.sendKeys(ConfigReader.getProperty("password"));
         loginPage.loginButton.click();
@@ -73,4 +75,6 @@ public class US12_NurayStepDef {
         price2 = productsPage.productPrice(num2);
         productsPage.productClick(num2);
     }
+
+
 }
