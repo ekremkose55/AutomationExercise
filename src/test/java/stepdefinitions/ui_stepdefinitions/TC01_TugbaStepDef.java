@@ -1,5 +1,6 @@
 package stepdefinitions.ui_stepdefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,8 +10,9 @@ import pages.RegistrationPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC01_RegistrationSteps {
+public class TC01_TugbaStepDef {
     RegistrationPage registrationPage = new RegistrationPage();
+    Faker faker = new Faker();
 
     @Given("user goes to the url {string}")
     public void userGoesToTheUrl(String url) {
@@ -39,21 +41,21 @@ public class TC01_RegistrationSteps {
     }
 
 
+
     @And("user enter name and email as {string} , {string}")
     public void userEnterNameAndEmailAs(String name, String email) {
+        name = faker.name().name();
         Driver.waitAndSendText(registrationPage.name,name);
+        email = faker.internet().emailAddress();
         Driver.waitAndSendText(registrationPage.email,email);
 
     }
-
 
     @Then("user click Signup button")
     public void userClickSignupButton() {
         Driver.waitAndClick(registrationPage.verifySignup);
 
     }
-
-
 
     @Then("verify {string} is visible")
     public void verify_is_visible(String string) {
@@ -66,7 +68,9 @@ public class TC01_RegistrationSteps {
 
         Driver.waitAndClick(registrationPage.title);
         registrationPage.name2.clear();
+        name = faker.name().name();
         Driver.waitAndSendText(registrationPage.name2,name);
+        password = faker.internet().password();
         Driver.waitAndSendText(registrationPage.password,password);
         Driver.selectByIndex(registrationPage.days,24);
         Driver.selectByVisibleText(registrationPage.months,"July");
@@ -90,10 +94,15 @@ public class TC01_RegistrationSteps {
 
     @And("user fill details firstname,lastname,company,address{int},address{int},country,state,city,zipcode,mobile number as {string}, {string} , {string} , {string} , {string} , {string} , {string} , {string} , {string} , {string}")
     public void userFillDetailsFirstnameLastnameCompanyAddressAddressCountryStateCityZipcodeMobileNumberAs(int arg1 , int arg2, String firstname, String lastname, String company, String address1, String address2, String country, String state, String city, String zipcode, String mobileNumber) {
+       firstname = faker.name().firstName();
         Driver.waitAndSendText(registrationPage.firstname,firstname);
+        lastname = faker.name().lastName();
         Driver.waitAndSendText(registrationPage.lastname,lastname);
+        company = faker.company().industry();
         Driver.waitAndSendText(registrationPage.company,company);
+        address1 = faker.address().fullAddress();
         Driver.waitAndSendText(registrationPage.address1,address1);
+        address2 = faker.address().fullAddress();
         Driver.waitAndSendText(registrationPage.address2,address2);
         Driver.selectByVisibleText(registrationPage.country,"Canada");
         Driver.waitAndSendText(registrationPage.state,state);
@@ -145,6 +154,7 @@ public class TC01_RegistrationSteps {
         Assert.assertTrue(registrationPage.delete.isDisplayed());
 
     }
+
 
 
 }

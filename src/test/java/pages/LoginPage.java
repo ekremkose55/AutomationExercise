@@ -54,6 +54,14 @@ public class LoginPage {
     @FindBy(xpath = "//button[text()='Login']")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//a[@href='/logout']")
+    public WebElement logoutButton;
+
+    @FindBy(xpath = "//*[text()='Your email or password is incorrect!']")
+    public WebElement verifyIncorrectEnter;
+
+
+
 
 }
 

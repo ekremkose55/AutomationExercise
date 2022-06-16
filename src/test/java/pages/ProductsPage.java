@@ -29,7 +29,6 @@ public class ProductsPage {
 
     }
 
-
     public boolean cartPrice(int num) {
         String cartPriceLocator = "(//tr[@id='product-" + num + "']//p)[2]";
         WebElement cartPriceElement = Driver.getDriver().findElement(By.xpath(cartPriceLocator));
@@ -48,6 +47,79 @@ public class ProductsPage {
     @FindBy(xpath = "(//button[@class='disabled'])[2]")
     public WebElement secondQuantity;
 
+
+    @FindBy(xpath = "//*[contains(text(), ' Products')]")
+    public WebElement productsButton;
+
+    @FindBy(xpath = "//*[text()='View Cart']")
+    public WebElement viewCart;
+
+    @FindBy(xpath = "//*[text()='Shopping Cart']")
+    public WebElement verifyCartPage;
+
+    @FindBy(xpath = "//a[@class='cart_quantity_delete']")
+    public WebElement xButton;
+
+    @FindBy(xpath = "//*[text()='Cart is empty!']")
+    public WebElement verifyEmptyCart;
+
+//    @FindBy(xpath = "//a[@href='/products']")
+//    public WebElement productsButton;
+
+    @FindBy(xpath = "//div[@class='brands_products']")
+    public WebElement brands;
+
+    @FindBy(xpath = "//a[@href='/brand_products/Polo']")
+    public WebElement poloBrand;
+
+    @FindBy(xpath = "//a[@href='/brand_products/Madame']")
+    public WebElement madameBrand;
+
+    @FindBy(xpath = "//h2[@class='title text-center']")
+    public WebElement brandProductsTitle;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Esen
+    @FindBy(xpath = "(//*[text()='View Product'])[3]")
+    public WebElement viewProduct;
+
+    @FindBy(xpath = "//*[text()='Write Your Review']")
+    public WebElement writeYourReview;
+
+    @FindBy(xpath = "//input[@id='name']")
+    public WebElement yourName;
+
+    @FindBy(xpath = "//input[@id='email']")
+    public WebElement emailAddress;
+
+    @FindBy(xpath = "//textarea[@id='review']")
+    public WebElement addReview;
+
+    @FindBy(xpath = "//button[@id='button-review']")
+    public WebElement submit;
+
+    @FindBy(xpath = "//*[text()='Thank you for your review.']")
+    public WebElement successMessage;
 
 }
 

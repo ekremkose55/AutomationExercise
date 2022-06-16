@@ -63,7 +63,8 @@ public class HomePage {
     public WebElement cartButton;
 
 
-}
+    @FindBy(xpath = "//h2[text()='Full-Fledged practice website for Automation Engineers']")
+    public WebElement verifyFullFledged;
 
 
 
@@ -74,6 +75,36 @@ public class HomePage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Esen
+    @FindBy(xpath = "//a[@href='/products']")
+    public WebElement products;
+
+    @FindBy(xpath = "//*[text()='All Products']")
+    public WebElement allProducts;
+
+    @FindBy(xpath = "//*[text()='recommended items']")
+    public WebElement recommendedItems;
+
+    @FindBy(xpath = "(//*[text()='Add to cart'])[72]")
+    public WebElement addToCart;
+
+    @FindBy(xpath = "//*[text()='Stylish Dress']")
+    public WebElement stylishDress;
+
+     }
 
 
 

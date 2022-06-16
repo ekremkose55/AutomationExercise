@@ -7,7 +7,7 @@ Feature:US011
    And User Click ' Cart' button
    Then Scroll down to footer
    Then Verify text 'SUBSCRIPTION'
-   And Enter email address in input and click arrow button
+  And Enter email address in input and click arrow button
    Then Verify success message 'You have been successfully subscribed!' is visible
 
 

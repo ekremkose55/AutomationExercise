@@ -8,7 +8,7 @@ import pages.RegistrationPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class Register_StepDef {
+public class TC05_EkremStepDef {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Given("Navigate to url {string}")
