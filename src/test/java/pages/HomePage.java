@@ -67,8 +67,14 @@ public class HomePage {
     public WebElement verifyFullFledged;
 
 
+    @FindBy(xpath = "//a[@id='scrollUp']")
+    public WebElement scrollUpArrow;
 
+         @FindBy(xpath = "(//h2)[1]")
+         public WebElement upTitle;
 
+    @FindBy(xpath = "//a//b")
+    public WebElement upAccountName;
 
 
 
@@ -103,6 +109,7 @@ public class HomePage {
 
     @FindBy(xpath = "//*[text()='Stylish Dress']")
     public WebElement stylishDress;
+
 
      }
 
