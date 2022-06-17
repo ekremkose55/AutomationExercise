@@ -1,0 +1,347 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T01:56:58.059Z",
+        "line": 24,
+        "name": "Register new user",
+        "description": "",
+        "id": "registration;register-new-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3665740400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to the url \"https://www.automationexercise.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.automationexercise.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userGoesToTheUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48882200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user verify home page is visibly",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_verify_home_page_is_visibly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 745162000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click \u0027Signup/Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup/Login\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_click_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43516400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verify \u0027New User Signup!\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027New User Signup!\u0027",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_verify_is_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183156400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter name and email as \"\u003cname\u003e\" , \"\u003cemail\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cname\u003e\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"\u003cemail\u003e\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userEnterNameAndEmailAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 550520600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click Signup button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userClickSignupButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37432200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify \u0027Enter Account Information\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Enter Account Information\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.verify_is_visible(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15919398800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "enter Title, Name, Email, Password, Date of Birth as \"\u003ctitle\u003e\" , \"\u003cname\u003e\" , \"\u003cemail\u003e\" , \"\u003cpassword\u003e\" , \"\u003cday\u003e\" , \"\u003cmonth\u003e\" , \"\u003cyear\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ctitle\u003e\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"\u003cname\u003e\"",
+                  "offset": 65
+                },
+                {
+                  "val": "\"\u003cemail\u003e\"",
+                  "offset": 76
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"\u003cday\u003e\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"\u003cmonth\u003e\"",
+                  "offset": 113
+                },
+                {
+                  "val": "\"\u003cyear\u003e\"",
+                  "offset": 125
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.enterTitleNameEmailPasswordDateOfBirthAs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81972600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user selects first checkbox",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_selects_first_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58545000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user selects second checkbox",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_selects_second_checkbox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 765892500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user fill details firstname,lastname,company,address1,address2,country,state,city,zipcode,mobile number as \"\u003cfirstname\u003e\", \"\u003clastname\u003e\" , \"\u003ccompany\u003e\" , \"\u003caddress1\u003e\" , \"\u003caddress2\u003e\" , \"Canada\" , \"ON\" , \"Ottawa\" , \"35689\" , \"123456789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 52
+                },
+                {
+                  "val": "2",
+                  "offset": 61
+                },
+                {
+                  "val": "\"\u003cfirstname\u003e\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"\u003clastname\u003e\"",
+                  "offset": 122
+                },
+                {
+                  "val": "\"\u003ccompany\u003e\"",
+                  "offset": 137
+                },
+                {
+                  "val": "\"\u003caddress1\u003e\"",
+                  "offset": 151
+                },
+                {
+                  "val": "\"\u003caddress2\u003e\"",
+                  "offset": 166
+                },
+                {
+                  "val": "\"Canada\"",
+                  "offset": 181
+                },
+                {
+                  "val": "\"ON\"",
+                  "offset": 192
+                },
+                {
+                  "val": "\"Ottawa\"",
+                  "offset": 199
+                },
+                {
+                  "val": "\"35689\"",
+                  "offset": 210
+                },
+                {
+                  "val": "\"123456789\"",
+                  "offset": 220
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userFillDetailsFirstnameLastnameCompanyAddressAddressCountryStateCityZipcodeMobileNumberAs(int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 750386000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click create account button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_click_create_account_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41887500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify \u0027Account created!\" is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.verify_account_created_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1066349400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click continue button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.click_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57823600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify Logged in as username is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.verifyLoggedInAsUsernameIsVisible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 271930600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click Delete Account button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userClickDeleteAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50883300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify Account Deleted! is visible and click continue",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.verifyAccountDeletedIsVisibleAndClickContinue()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UIregisteration"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC01_Tugba.feature",
+    "tags": []
+  }
+]

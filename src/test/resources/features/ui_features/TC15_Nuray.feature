@@ -31,10 +31,9 @@ Feature: TC15
     And Enter description in comment text area and click Place Order
     Then Enter payment details: "<NameCard>","<CardNumber>","<cvc>", "<ExpirationDate>", "<ExpirationYear>"
     Then User Click Pay and Confirm Order button
-    Then Verify success message 'Your order has been placed successfully!' is visible
-    And Click 'Delete Account' button
-    Then Verify 'ACCOUNT DELETED!' and click 'Continue' button
-
+    Then Verify Success Message 'Your order has been placed successfully!' is visible
+     And user click Delete Account button
+     Then verify Account Deleted! is visible and click continue
 
   Examples:
     | NameCard      | CardNumber      | cvc | ExpirationDate | ExpirationYear | Name |

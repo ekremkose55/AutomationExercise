@@ -32,7 +32,7 @@ public class TC11_NurayStepDef {
     @And("User Click {string} button")
     public void userClickCartButton(String text) {
        // pageHome.cartButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         pageHome.homePageClick(text);
 
     }
@@ -71,11 +71,10 @@ public class TC11_NurayStepDef {
 
     @Then("Verify success message {string} is visible")
     public void verifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible(String text) {
-//        ReusableMethods.waitFor(1);
-         Assert.assertTrue(pageHome.subscriptionSuccessText.getText().contains("You have been successfully subscribed!"));
+         Assert.assertTrue(pageHome.subscriptionSuccessText.getText().contains(text));
          Assert.assertTrue(pageHome.subscriptionSuccessText.isDisplayed());
 
-         Driver.getDriver().close();
+
     }
 
 

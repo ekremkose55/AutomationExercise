@@ -119,7 +119,7 @@ public class TC15_NurayStepDef {
         productsPage.expDate.sendKeys(ExpirationDate);
         productsPage.expYear.sendKeys(ExpirationYear);
         productsPage.payButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
     }
 
@@ -129,6 +129,21 @@ public class TC15_NurayStepDef {
     public void userClickPayAndConfirmOrderButton() {
         ReusableMethods.waitFor(1);
         productsPage.payButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
+
+
+
+   }
+
+      @Then("Verify Success Message {string} is visible")
+      public void verifySuccessMessageYourOrderHasBeenPlacedSuccessfullyIsVisible(String text) {
+        ReusableMethods.waitFor(2);
+       // Assert.assertTrue(productsPage.paySuccessText.getText().contains(text));
+          ReusableMethods.waitFor(2);
+         System.out.println(productsPage.paySuccessText.getText());
+       Assert.assertTrue(productsPage.paySuccessText.isDisplayed());
+
+
+
     }
 }

@@ -78,10 +78,12 @@ public class ProductsPage {
     @FindBy(xpath = "//input[@name='expiry_year']")
     public WebElement expYear;
 
-    @FindBy(xpath = "//button[@id='submit']")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement payButton;
 
-
+//
+    @FindBy(xpath = "(//div[@class='alert-success alert'])[1]")
+    public WebElement paySuccessText;
 
     @FindBy(xpath = "//*[contains(text(), ' Products')]")
     public WebElement productsButton;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.744">
+    <testcase classname="Registration" name="Register new user" time="24.505">
+        <system-out>
+            <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
+And user verify home page is visibly........................................passed
+Then user click 'Signup/Login' button.......................................passed
+And user verify 'New User Signup!' is visible...............................passed
+And user enter name and email as "<name>" , "<email>".......................passed
+Then user click Signup button...............................................passed
+And verify 'Enter Account Information' is visible...........................passed
+And enter Title, Name, Email, Password, Date of Birth as "<title>" , "<name>" , "<email>" , "<password>" , "<day>" , "<month>" , "<year>".passed
+And user selects first checkbox.............................................passed
+Then user selects second checkbox...........................................passed
+And user fill details firstname,lastname,company,address1,address2,country,state,city,zipcode,mobile number as "<firstname>", "<lastname>" , "<company>" , "<address1>" , "<address2>" , "Canada" , "ON" , "Ottawa" , "35689" , "123456789".passed
+Then user click create account button.......................................passed
+Then verify 'Account created!" is visible...................................passed
+And click continue button...................................................passed
+Then verify Logged in as username is visible................................passed
+When user click Delete Account button.......................................passed
+Then verify Account Deleted! is visible and click continue..................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
