@@ -1,1 +1,172 @@
+<<<<<<< HEAD
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:10:10.902Z",
+        "line": 16,
+        "name": "login with valid credentials",
+        "description": "",
+        "id": "login;login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9449146000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to the url \"https://www.automationexercise.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.automationexercise.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userGoesToTheUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 409560000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user verify home page is visibly",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_verify_home_page_is_visibly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1434941000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click \u0027Signup/Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup/Login\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_click_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 544138000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify login to your account is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verify_login_to_your_account_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 460003000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter correct email and password as \"alexprit345@gmail.com\" , \"abc321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"alexprit345@gmail.com\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"abc321\"",
+                  "offset": 67
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.user_enter_correct_email_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2952429000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click login button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 383175000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify Logged in as username",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verifyLoggedInAsUsername()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 731094000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click Delete Account button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userClickDeleteAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29433000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify Account Deleted! is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verify_account_deleted_is_visible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC02_Tugba.feature",
+    "tags": [
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
+=======
 []
+>>>>>>> master

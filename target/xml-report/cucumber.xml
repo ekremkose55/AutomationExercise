@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.979">
+    <testcase classname="Login" name="login with valid credentials" time="16.598">
+        <system-out>
+            <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
+And user verify home page is visibly........................................passed
+Then user click 'Signup/Login' button.......................................passed
+Then verify login to your account is visible................................passed
+And user enter correct email and password as "alexprit345@gmail.com" , "abc321".passed
+And user click login button.................................................passed
+Then verify Logged in as username...........................................passed
+When user click Delete Account button.......................................passed
+Then verify Account Deleted! is visible.....................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
+=======
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.152"/>
+>>>>>>> master
