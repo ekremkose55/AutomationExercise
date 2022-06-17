@@ -1,1 +1,0 @@
-file:src/test/resources/features/ui_features/TC12_Nuray.feature:4
