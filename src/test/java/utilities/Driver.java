@@ -327,7 +327,11 @@ public class Driver {
         }                 // Multi browser (chrome,firefox,ie vb) test yaparken bu onemli olacaktir
     }
 
-
+    //========Hover Over=====//
+    public static void hover(WebElement element) {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(element).perform();
+    }
 
 }
 

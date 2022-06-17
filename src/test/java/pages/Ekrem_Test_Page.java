@@ -148,6 +148,20 @@ public class Ekrem_Test_Page {
     @FindBy(name = " upload_file")
     public WebElement uploadFile;
 
+    @FindBy(xpath = "//input[@name='submit']")
+    public WebElement submitbutton;
+
+    @FindBy(xpath = "//*[.='Category']")
+    public WebElement categoryBar;
+
+    @FindBy(xpath ="//*[text()='Women')")
+    public WebElement womenButton;
+
+
+
+
+
+
 
 
 
