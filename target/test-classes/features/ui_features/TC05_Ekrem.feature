@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-@error_email @wip
-=======
-@smokeTest
->>>>>>> master
-
+@error_email
 Feature: Register User with existing email
   Scenario: TC05 Register User with existing email
     Given Navigate to url 'http://automationexercise.com'

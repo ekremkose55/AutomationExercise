@@ -5,10 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Ekrem_Test_Page {
+public class RegistrationPage {
 
 
-    public Ekrem_Test_Page(){
+    public RegistrationPage(){
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
