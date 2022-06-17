@@ -14,8 +14,8 @@ Feature: TC14
     And Verify that 'Checkout' is displayed
     And Click Proceed To Checkout
     And Click 'Register / Login' button in the Checkout page
-    And Fill all details in Signup and create account
-    When Verify 'ACCOUNT CREATED!' and click 'Continue' button
+    And Fill all details in Signup and create account in the Checkout page
+    When Verify 'ACCOUNT CREATED!' and click 'Continue' button in the Checkout Page
     And Verify Logged in as username at top
     And User Click ' Cart' button
     And Click Proceed To Checkout

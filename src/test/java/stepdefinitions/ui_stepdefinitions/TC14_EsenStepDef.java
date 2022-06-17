@@ -52,7 +52,7 @@ public class TC14_EsenStepDef {
         checkoutPage.registerLogin.click();
     }
 
-    @And("Fill all details in Signup and create account")
+    @And("Fill all details in Signup and create account in the Checkout page")
     public void fillAllDetailsInSignupAndCreateAccount() {
 
         registrationPage.name.sendKeys(faker.name().name());
@@ -79,7 +79,7 @@ public class TC14_EsenStepDef {
         registrationPage.createAccount.click();
     }
 
-    @When("Verify {string} and click {string} button")
+    @When("Verify {string} and click {string} button in the Checkout Page")
     public void verifyACCOUNTCREATEDAndClickContinueButton(String arg0, String arg1) {
         Assert.assertTrue(registrationPage.verifyAcountCreated.isDisplayed());
         registrationPage.continueButton.click();
