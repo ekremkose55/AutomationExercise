@@ -1,4 +1,4 @@
-@TC22
+@TC22 @smokeTest
 
   Feature: TC22
     Scenario: Add to cart from Recommended items

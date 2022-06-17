@@ -1,3 +1,4 @@
+@smokeTest
 Feature: US012
 
   Scenario: Add Products in Cart
