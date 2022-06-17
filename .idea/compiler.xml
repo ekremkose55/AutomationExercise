@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AutomationExercise2022" />
+        <module name="cucumber-framework" />
       </profile>
     </annotationProcessing>
   </component>

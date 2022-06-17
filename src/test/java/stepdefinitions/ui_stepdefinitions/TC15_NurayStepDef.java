@@ -3,7 +3,6 @@ package stepdefinitions.ui_stepdefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import org.junit.Assert;
 import pages.HomePage;
 import pages.LoginPage;

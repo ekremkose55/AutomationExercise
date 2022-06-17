@@ -9,6 +9,7 @@ public class TC25_NurayStepDef {
 
    HomePage homePage= new HomePage();
 
+
     @When("Click on arrow at bottom right side to move upward")
     public void clickOnArrowAtBottomRightSideToMoveUpward() {
         homePage.scrollUpArrow.click();
@@ -21,4 +22,5 @@ public class TC25_NurayStepDef {
         Assert.assertEquals(homePage.upTitle.getText(),text);
 
     }
+
 }
