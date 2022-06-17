@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="48.201">
-    <testcase classname="Login" name="login with valid credentials" time="15.735">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="51.673">
+    <testcase classname="Login" name="login with valid credentials" time="14.102">
         <system-out>
             <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
 And user verify home page is visibly........................................passed
@@ -14,7 +14,7 @@ Then verify Account Deleted! is visible.....................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login with incorrect credentials" name="Login with incorrect credentials" time="9.353">
+    <testcase classname="Login with incorrect credentials" name="Login with incorrect credentials" time="8.236">
         <system-out>
             <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
 And user verify home page is visibly........................................passed
@@ -26,7 +26,7 @@ Then verify error Your email or password is incorrect! is visible...........pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Register User with existing email" name="TC05 Register User with existing email" time="5.135">
+    <testcase classname="Register User with existing email" name="TC05 Register User with existing email" time="5.277">
         <system-out>
             <![CDATA[Given Navigate to url 'http://automationexercise.com'.......................passed
 When Verify that home page is visible successfully..........................passed
@@ -38,8 +38,8 @@ Then Verify error 'Email Address already exist!' is visible.................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US012" name="Add Products in Cart" time="17.084">
-        <failure message="expected:&lt;900&gt; but was:&lt;1800&gt;" type="java.lang.AssertionError">
+    <testcase classname="US012" name="Add Products in Cart" time="17.948">
+        <failure message="expected:&lt;900&gt; but was:&lt;1500&gt;" type="java.lang.AssertionError">
             <![CDATA[Given Launch browser Navigate to url 'http://automationexercise.com'........passed
 Then User Verify that home page is visible 'Automation Exercise' successfully.passed
 And User Click ' Signup / Login' button.....................................passed
@@ -53,7 +53,7 @@ Then Verify 1 and 2 both products are added to Cart.........................pass
 Then Verify their prices, quantity and total price..........................failed
 
 StackTrace:
-java.lang.AssertionError: expected:<900> but was:<1800>
+java.lang.AssertionError: expected:<900> but was:<1500>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -64,5 +64,16 @@ java.lang.AssertionError: expected:<900> but was:<1800>
 ]]>
         </failure>
     </testcase>
-    <testcase classname="TC15" name="_2"/>
+    <testcase classname="TC22" name="Add to cart from Recommended items" time="5.35">
+        <system-out>
+            <![CDATA[Given Launch browser Navigate to url 'http://automationexercise.com'........passed
+When Scroll to bottom of page...............................................passed
+And Verify 'RECOMMENDED ITEMS' are visible..................................passed
+And Click on 'Add To Cart' on Recommended product...........................passed
+And User Click 'View Cart' button...........................................passed
+Then Verify that product is displayed in cart page..........................passed
+Then close the WebPage......................................................passed
+]]>
+        </system-out>
+    </testcase>
 </testsuite>
