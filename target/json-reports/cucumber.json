@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T02:53:10.930Z",
+        "start_timestamp": "2022-06-17T03:32:24.886Z",
         "line": 16,
         "name": "login with valid credentials",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8636602000,
+              "duration": 13219598000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 431709000,
+              "duration": 124850000,
               "status": "passed"
             },
             "line": 6,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 1337990000,
+              "duration": 2148900000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 584599000,
+              "duration": 471411000,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 477433000,
+              "duration": 502322000,
               "status": "passed"
             },
             "line": 9,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 2898315000,
+              "duration": 2039459000,
               "status": "passed"
             },
             "line": 10,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 65584000,
+              "duration": 100595000,
               "status": "passed"
             },
             "line": 11,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 977069000,
+              "duration": 852671000,
               "status": "passed"
             },
             "line": 12,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 122911000,
+              "duration": 462441000,
               "status": "passed"
             },
             "line": 13,
@@ -169,7 +169,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T02:53:26.740Z",
+        "start_timestamp": "2022-06-17T03:32:45.352Z",
         "line": 5,
         "name": "Login with incorrect credentials",
         "description": "",
@@ -179,7 +179,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5018573000,
+              "duration": 6952866000,
               "status": "passed"
             },
             "line": 6,
@@ -197,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 115989000,
+              "duration": 85274000,
               "status": "passed"
             },
             "line": 7,
@@ -209,7 +209,7 @@
           },
           {
             "result": {
-              "duration": 1281846000,
+              "duration": 2022386000,
               "status": "passed"
             },
             "line": 8,
@@ -227,7 +227,7 @@
           },
           {
             "result": {
-              "duration": 593087000,
+              "duration": 358968000,
               "status": "passed"
             },
             "line": 9,
@@ -239,7 +239,7 @@
           },
           {
             "result": {
-              "duration": 667062000,
+              "duration": 846505000,
               "status": "passed"
             },
             "line": 10,
@@ -261,7 +261,7 @@
           },
           {
             "result": {
-              "duration": 1596747000,
+              "duration": 1577967000,
               "status": "passed"
             },
             "line": 11,
@@ -273,7 +273,7 @@
           },
           {
             "result": {
-              "duration": 49079000,
+              "duration": 1149899000,
               "status": "passed"
             },
             "line": 12,
@@ -314,7 +314,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T02:53:36.139Z",
+        "start_timestamp": "2022-06-17T03:32:58.607Z",
         "line": 4,
         "name": "TC05 Register User with existing email",
         "description": "",
@@ -324,7 +324,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2688332000,
+              "duration": 3114471000,
               "status": "passed"
             },
             "line": 5,
@@ -342,7 +342,7 @@
           },
           {
             "result": {
-              "duration": 393043000,
+              "duration": 828292000,
               "status": "passed"
             },
             "line": 6,
@@ -354,7 +354,7 @@
           },
           {
             "result": {
-              "duration": 577410000,
+              "duration": 2064397000,
               "status": "passed"
             },
             "line": 7,
@@ -372,7 +372,7 @@
           },
           {
             "result": {
-              "duration": 35550000,
+              "duration": 231839000,
               "status": "passed"
             },
             "line": 8,
@@ -390,7 +390,7 @@
           },
           {
             "result": {
-              "duration": 595328000,
+              "duration": 2354453000,
               "status": "passed"
             },
             "line": 9,
@@ -402,7 +402,7 @@
           },
           {
             "result": {
-              "duration": 788485000,
+              "duration": 2983357000,
               "status": "passed"
             },
             "line": 10,
@@ -420,7 +420,7 @@
           },
           {
             "result": {
-              "duration": 27533000,
+              "duration": 291072000,
               "status": "passed"
             },
             "line": 11,
@@ -464,7 +464,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T02:53:41.296Z",
+        "start_timestamp": "2022-06-17T03:33:10.672Z",
         "line": 4,
         "name": "Add Products in Cart",
         "description": "",
@@ -474,7 +474,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2351888000,
+              "duration": 6818441000,
               "status": "passed"
             },
             "line": 6,
@@ -492,7 +492,7 @@
           },
           {
             "result": {
-              "duration": 646787000,
+              "duration": 1218064000,
               "status": "passed"
             },
             "line": 7,
@@ -510,7 +510,7 @@
           },
           {
             "result": {
-              "duration": 1844112000,
+              "duration": 2925952000,
               "status": "passed"
             },
             "line": 8,
@@ -528,7 +528,7 @@
           },
           {
             "result": {
-              "duration": 4141901000,
+              "duration": 8989228000,
               "status": "passed"
             },
             "line": 9,
@@ -540,7 +540,7 @@
           },
           {
             "result": {
-              "duration": 2335406000,
+              "duration": 3470116000,
               "status": "passed"
             },
             "line": 10,
@@ -558,7 +558,7 @@
           },
           {
             "result": {
-              "duration": 1008444000,
+              "duration": 704342000,
               "status": "passed"
             },
             "line": 11,
@@ -576,7 +576,7 @@
           },
           {
             "result": {
-              "duration": 1201744000,
+              "duration": 1195917000,
               "status": "passed"
             },
             "line": 12,
@@ -594,7 +594,7 @@
           },
           {
             "result": {
-              "duration": 286533000,
+              "duration": 373253000,
               "status": "passed"
             },
             "line": 13,
@@ -612,7 +612,7 @@
           },
           {
             "result": {
-              "duration": 1797658000,
+              "duration": 1973373000,
               "status": "passed"
             },
             "line": 14,
@@ -630,7 +630,7 @@
           },
           {
             "result": {
-              "duration": 581675000,
+              "duration": 703429000,
               "status": "passed"
             },
             "line": 15,
@@ -652,9 +652,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c900\u003e but was:\u003c1800\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\n\tat org.junit.Assert.assertEquals(Assert.java:118)\n\tat org.junit.Assert.assertEquals(Assert.java:555)\n\tat org.junit.Assert.assertEquals(Assert.java:542)\n\tat stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.verifyTheirPricesQuantityAndTotalPrice(TC12_NurayStepDef.java:34)\n\tat ✽.Verify their prices, quantity and total price(file:///Users/tugbadagli/IdeaProjects/AutomationExercise/./src/test/resources/features/ui_features/TC12_Nuray.feature:16)\n",
-              "duration": 839777000,
-              "status": "failed"
+              "duration": 1805417000,
+              "status": "passed"
             },
             "line": 16,
             "name": "Verify their prices, quantity and total price",
@@ -691,7 +690,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T02:53:58.526Z",
+        "start_timestamp": "2022-06-17T03:33:41.223Z",
         "line": 25,
         "name": "",
         "description": "",
