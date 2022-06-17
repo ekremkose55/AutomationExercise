@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
     private static int timeout = 5;
-    private Driver(){
+    public Driver(){
     }
     private static WebDriver driver;
     public static WebDriver getDriver(){

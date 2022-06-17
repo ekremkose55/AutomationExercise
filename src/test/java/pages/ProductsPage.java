@@ -115,6 +115,47 @@ public class ProductsPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Esen
+    @FindBy(xpath = "(//*[text()='View Product'])[3]")
+    public WebElement viewProduct;
+
+    @FindBy(xpath = "//*[text()='Write Your Review']")
+    public WebElement writeYourReview;
+
+    @FindBy(xpath = "//input[@id='name']")
+    public WebElement yourName;
+
+    @FindBy(xpath = "//input[@id='email']")
+    public WebElement emailAddress;
+
+    @FindBy(xpath = "//textarea[@id='review']")
+    public WebElement addReview;
+
+    @FindBy(xpath = "//button[@id='button-review']")
+    public WebElement submit;
+
+    @FindBy(xpath = "//*[text()='Thank you for your review.']")
+    public WebElement successMessage;
+
 }
 
 
