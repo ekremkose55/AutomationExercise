@@ -157,12 +157,4 @@ public class Ekrem_Test_Page {
     @FindBy(xpath ="//*[text()='Women')")
     public WebElement womenButton;
 
-
-
-
-
-
-
-
-
 }

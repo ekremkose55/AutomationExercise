@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="58.827">
 <testcase classname="Register User with existing email" name="TC05 Register User with existing email" time="46.6">
 <system-out><![CDATA[Given Navigate to url 'http://automationexercise.com'.......................passed
@@ -42,3 +43,6 @@ Session ID: 39ab7bd865cc0ac23dd7a809b97e0655
 ]]></failure>
 </testcase>
 </testsuite>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.321"/>
+>>>>>>> master

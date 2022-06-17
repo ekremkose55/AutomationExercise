@@ -9,21 +9,19 @@ Feature: Registration
   And user enter name and email as "<name>" , "<email>"
   Then user click Signup button
   And verify 'Enter Account Information' is visible
-  And enter Title, Name, Email, Password, Date of Birth as "<title>" , "<name>" , "<email>" , "<password>" , "<dateOfBirth>"
+  And enter Title, Name, Email, Password, Date of Birth as "<title>" , "<name>" , "<email>" , "<password>" , "<day>" , "<month>" , "<year>"
   And user selects first checkbox
   Then user selects second checkbox
   And user fill details firstname,lastname,company,address1,address2,country,state,city,zipcode,mobile number as "<firstname>", "<lastname>" , "<company>" , "<address1>" , "<address2>" , "<country>" , "<state>" , "<city>" , "<zipcode>" , "<mobileNumber>"
   Then user click create account button
   Then verify 'Account created!" is visible
   And click continue button
-  Then verify 'Logged in as username' is visible
-  When user click 'Delete Account' button
-  Then verify 'Account Deleted!' is visible and click continue
+  Then verify Logged in as username is visible
+  When user click Delete Account button
+  Then verify Account Deleted! is visible and click continue
  Examples:
- |name     |email                |title|password|dateOfBirth |firstname|lastname|company   |address1        |address2 |country|state|city  |zipcode|mobileNumber|
- |Alex Prit|alexprit345@gmail.com|Mr.  |abc321  |24 July 1995|Alex     |Prit    |Deeps Bank|60 grantbrook st|55 nepean|Canada |ON   |Ottawa|       |            |
-
-
+  |country|state|city  |zipcode     | mobileNumber|
+  |Canada |ON   |Ottawa|    35689   | 123456789  |
 
 
 

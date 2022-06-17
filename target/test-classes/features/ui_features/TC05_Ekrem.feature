@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @error_email @wip
+=======
+@smokeTest
+>>>>>>> master
 
 Feature: Register User with existing email
   Scenario: TC05 Register User with existing email
@@ -9,7 +13,6 @@ Feature: Register User with existing email
     When Enter name and already registered email address
     When Click 'Signup' button
     Then Verify error 'Email Address already exist!' is visible
-
 
 
 
