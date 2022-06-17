@@ -1,3 +1,4 @@
+@smokeTest
 Feature: TC15
 
   Scenario Outline:

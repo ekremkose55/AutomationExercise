@@ -1,3 +1,4 @@
+@smokeTest
 Feature: Login
 
   Scenario Outline:login with valid credentials

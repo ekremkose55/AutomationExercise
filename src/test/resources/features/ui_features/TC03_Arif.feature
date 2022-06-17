@@ -1,3 +1,4 @@
+@smokeTest
 Feature: Login with incorrect credentials
 
   @incorrectVerify

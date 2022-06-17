@@ -43,6 +43,7 @@ public class TC02_TugbaStepDef {
     public void verify_account_deleted_is_visible() {
 
         Assert.assertTrue(registrationPage.delete.isDisplayed());
+        Driver.closeDriver();
     }
 
 }

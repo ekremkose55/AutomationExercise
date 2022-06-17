@@ -1,5 +1,10 @@
+@smokeTest
 Feature: TC15
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
   Scenario Outline:
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Then Verify that home page is visible successfully
