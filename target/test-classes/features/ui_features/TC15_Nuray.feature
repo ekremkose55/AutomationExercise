@@ -1,7 +1,10 @@
 #@smokeTest
 Feature: TC15
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
   Scenario Outline:
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Then Verify that home page is visible successfully
@@ -15,9 +18,9 @@ Feature: TC15
     And Enter description in comment text area and click Place Order
     Then Enter payment details: "<NameCard>","<CardNumber>","<cvc>", "<ExpirationDate>", "<ExpirationYear>"
     Then User Click Pay and Confirm Order button
-    Then Verify success message 'Your order has been placed successfully!' is visible
-    And Click 'Delete Account' button
-    Then Verify 'ACCOUNT DELETED!' and click 'Continue' button
+    And Verify success message 'Your order has been placed successfully!'
+    And User Click 'Delete Account' button in the payment page
+    Then User Verify 'ACCOUNT DELETED!' and click 'Continue' button
 
 
   Examples:

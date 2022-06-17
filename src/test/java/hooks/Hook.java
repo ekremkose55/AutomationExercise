@@ -8,6 +8,8 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hook {
+
+
     @Before
     public void setUp(){
 //        RUNS BEFORE EACH SCENARIO
@@ -22,4 +24,5 @@ public class Hook {
         }
        Driver.closeDriver();
     }
+
 }
