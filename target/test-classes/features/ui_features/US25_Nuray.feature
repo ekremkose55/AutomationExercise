@@ -1,13 +1,13 @@
-Feature:025
-
-  Scenario:
-   Given Launch browser Navigate to url 'http://automationexercise.com'
-   And Verify that home page is visible successfully
-   Then Scroll down to footer
-   And Verify 'SUBSCRIPTION' is visible
-   When Click on arrow at bottom right side to move upward
-   Then Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
-
+#Feature:025
+#
+#  Scenario:
+#   Given Launch browser Navigate to url 'http://automationexercise.com'
+#   And Verify that home page is visible successfully
+#   Then Scroll down to footer
+#   And Verify 'SUBSCRIPTION' is visible
+#   When Click on arrow at bottom right side to move upward
+#   Then Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
+#
 
 
 

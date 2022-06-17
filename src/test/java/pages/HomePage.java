@@ -42,8 +42,14 @@ public class HomePage {
     public WebElement footerElement;
 
 
+    @FindBy(xpath = "//a[@id='scrollUp']")
+    public WebElement scrollUpArrow;
 
+         @FindBy(xpath = "(//h2)[1]")
+         public WebElement upTitle;
 
+    @FindBy(xpath = "//a//b")
+    public WebElement upAccountName;
 
 
     @FindBy(xpath = "//div[@id='attach-popover-lgtbox']")
@@ -54,6 +60,7 @@ public class HomePage {
 
          @FindBy(xpath = "//h2[text()='Full-Fledged practice website for Automation Engineers']")
         public WebElement verifyFullFledged;
+
 
      }
 

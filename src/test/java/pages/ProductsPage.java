@@ -47,6 +47,41 @@ public class ProductsPage {
     @FindBy(xpath = "(//button[@class='disabled'])[2]")
     public WebElement secondQuantity;
 
+    @FindBy(xpath = "//h2//b")
+    public WebElement accountCreated;
+
+
+    @FindBy(xpath = "//h2[text()='Address Details']")
+    public WebElement addressDetail;
+
+    @FindBy(xpath = "//h2[text()='Review Your Order']")
+    public WebElement reviewOrder;
+
+    @FindBy(xpath = "//textarea[@name='message']")
+    public WebElement testArea;
+
+    @FindBy(xpath = "//a[text()='Place Order']")
+    public WebElement placeOrder;
+
+    @FindBy(xpath = "//input[@name='name_on_card']")
+    public WebElement nameCard;
+
+    @FindBy(xpath = "//input[@name='card_number']")
+    public WebElement cardNum;
+
+    @FindBy(xpath = "//input[@name='cvc']")
+    public WebElement cvcNum;
+
+    @FindBy(xpath = "//input[@name='expiry_month']")
+    public WebElement expDate;
+
+    @FindBy(xpath = "//input[@name='expiry_year']")
+    public WebElement expYear;
+
+    @FindBy(xpath = "//button[@id='submit']")
+    public WebElement payButton;
+
+
 
     @FindBy(xpath = "//*[contains(text(), ' Products')]")
     public WebElement productsButton;
