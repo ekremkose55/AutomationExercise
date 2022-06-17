@@ -36,7 +36,8 @@ public class TC12_NurayStepDef {
         Assert.assertTrue(productsPage.firstQuantity.getText().contains("1"));
         Assert.assertTrue(productsPage.secondQuantity.getText().contains("1"));
 
-        Driver.getDriver().close();
+
+
 
 
 

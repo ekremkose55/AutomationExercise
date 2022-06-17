@@ -98,9 +98,6 @@ public class TC15_NurayStepDef {
 
 
 
-
-
-
     }
 
     @And("Enter description in comment text area and click Place Order")
@@ -119,7 +116,7 @@ public class TC15_NurayStepDef {
         productsPage.expDate.sendKeys(ExpirationDate);
         productsPage.expYear.sendKeys(ExpirationYear);
         productsPage.payButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
     }
 
@@ -129,6 +126,14 @@ public class TC15_NurayStepDef {
     public void userClickPayAndConfirmOrderButton() {
         ReusableMethods.waitFor(1);
         productsPage.payButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
+
+
+
+
+
+
+
+
     }
 }

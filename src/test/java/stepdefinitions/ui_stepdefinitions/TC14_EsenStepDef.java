@@ -125,6 +125,7 @@ public class TC14_EsenStepDef {
 
     @And("User Click {string} button in the payment page")
     public void userClickDeleteAccountButtonInThePaymentPage(String arg01) {
+
         checkoutPage.deleteAccount.click();
     }
 
