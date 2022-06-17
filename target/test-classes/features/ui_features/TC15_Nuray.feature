@@ -1,4 +1,4 @@
-@smokeTest
+#@smokeTest
 Feature: TC15
 
 <<<<<<< HEAD
