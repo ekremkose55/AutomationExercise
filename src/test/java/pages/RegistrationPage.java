@@ -145,7 +145,4 @@ public class RegistrationPage {
     @FindBy(id = "message")
     public WebElement messageTestBox;
 
-
-
-
 }
