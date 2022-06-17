@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="48.201">
+    <testcase classname="Login" name="login with valid credentials" time="15.735">
+        <system-out>
+            <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
+And user verify home page is visibly........................................passed
+Then user click 'Signup/Login' button.......................................passed
+Then verify login to your account is visible................................passed
+And user enter correct email and password as "alexprit345@gmail.com" , "abc321".passed
+And user click login button.................................................passed
+Then verify Logged in as username...........................................passed
+When user click Delete Account button.......................................passed
+Then verify Account Deleted! is visible.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login with incorrect credentials" name="Login with incorrect credentials" time="9.353">
+        <system-out>
+            <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
+And user verify home page is visibly........................................passed
+Then user click 'Signup/Login' button.......................................passed
+Then verify login to your account is visible................................passed
+Then user enters incorrect email and password as "<Email>" and "<Password>".passed
+Then user click login button................................................passed
+Then verify error Your email or password is incorrect! is visible...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Register User with existing email" name="TC05 Register User with existing email" time="5.135">
+        <system-out>
+            <![CDATA[Given Navigate to url 'http://automationexercise.com'.......................passed
+When Verify that home page is visible successfully..........................passed
+When Click on 'Signup / Login' button.......................................passed
+When Verify 'New User Signup!' is visible...................................passed
+When Enter name and already registered email address........................passed
+When Click 'Signup' button..................................................passed
+Then Verify error 'Email Address already exist!' is visible.................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US012" name="Add Products in Cart" time="17.084">
+        <failure message="expected:&lt;900&gt; but was:&lt;1800&gt;" type="java.lang.AssertionError">
+            <![CDATA[Given Launch browser Navigate to url 'http://automationexercise.com'........passed
+Then User Verify that home page is visible 'Automation Exercise' successfully.passed
+And User Click ' Signup / Login' button.....................................passed
+Then User login the app.....................................................passed
+And User Click ' Products' button...........................................passed
+Then Hover over 1 first product and click Add to cart.......................passed
+When User Click 'Continue Shopping' button..................................passed
+Then Hover over 2 second product and click Add to cart......................passed
+And User Click 'View Cart' button...........................................passed
+Then Verify 1 and 2 both products are added to Cart.........................passed
+Then Verify their prices, quantity and total price..........................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<900> but was:<1800>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.verifyTheirPricesQuantityAndTotalPrice(TC12_NurayStepDef.java:34)
+	at ✽.Verify their prices, quantity and total price(file:///Users/tugbadagli/IdeaProjects/AutomationExercise/./src/test/resources/features/ui_features/TC12_Nuray.feature:16)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="TC15" name="_2"/>
+</testsuite>

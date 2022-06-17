@@ -1,0 +1,725 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:53:10.930Z",
+        "line": 16,
+        "name": "login with valid credentials",
+        "description": "",
+        "id": "login;login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8636602000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to the url \"https://www.automationexercise.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.automationexercise.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userGoesToTheUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 431709000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user verify home page is visibly",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_verify_home_page_is_visibly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1337990000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click \u0027Signup/Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup/Login\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_click_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 584599000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify login to your account is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verify_login_to_your_account_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 477433000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter correct email and password as \"alexprit345@gmail.com\" , \"abc321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"alexprit345@gmail.com\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"abc321\"",
+                  "offset": 67
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.user_enter_correct_email_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2898315000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click login button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65584000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify Logged in as username",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verifyLoggedInAsUsername()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 977069000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click Delete Account button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userClickDeleteAccountButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122911000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify Account Deleted! is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verify_account_deleted_is_visible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC02_Tugba.feature",
+    "tags": [
+      {
+        "name": "@smokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:53:26.740Z",
+        "line": 5,
+        "name": "Login with incorrect credentials",
+        "description": "",
+        "id": "login-with-incorrect-credentials;login-with-incorrect-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5018573000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user goes to the url \"https://www.automationexercise.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.automationexercise.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.userGoesToTheUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115989000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verify home page is visibly",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_verify_home_page_is_visibly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1281846000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click \u0027Signup/Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup/Login\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC01_TugbaStepDef.user_click_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 593087000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify login to your account is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.verify_login_to_your_account_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 667062000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters incorrect email and password as \"\u003cEmail\u003e\" and \"\u003cPassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cEmail\u003e\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"\u003cPassword\u003e\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC03_ArifStepDef.userEntersIncorrectEmailAndPasswordAsAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1596747000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click login button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC02_TugbaStepDef.user_click_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49079000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify error Your email or password is incorrect! is visible",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC03_ArifStepDef.verify_error_your_email_or_password_is_incorrect_is_visible()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@incorrectVerify"
+          }
+        ]
+      }
+    ],
+    "name": "Login with incorrect credentials",
+    "description": "",
+    "id": "login-with-incorrect-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC03_Arif.feature",
+    "tags": [
+      {
+        "name": "@smokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:53:36.139Z",
+        "line": 4,
+        "name": "TC05 Register User with existing email",
+        "description": "",
+        "id": "register-user-with-existing-email;tc05-register-user-with-existing-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2688332000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to url \u0027http://automationexercise.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://automationexercise.com\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393043000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify that home page is visible successfully",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.verify_that_home_page_is_visible_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 577410000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on \u0027Signup / Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup / Login\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.click_on_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35550000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify \u0027New User Signup!\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027New User Signup!\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.verify_is_visible(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 595328000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter name and already registered email address",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.enter_name_and_already_registered_email_address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 788485000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click \u0027Signup\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.click_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27533000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify error \u0027Email Address already exist!\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Email Address already exist!\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_EkremStepDef.verify_error_is_visible(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Register User with existing email",
+    "description": "",
+    "id": "register-user-with-existing-email",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC05_Ekrem.feature",
+    "tags": [
+      {
+        "name": "@smokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:53:41.296Z",
+        "line": 4,
+        "name": "Add Products in Cart",
+        "description": "",
+        "id": "us012;add-products-in-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2351888000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch browser Navigate to url \u0027http://automationexercise.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://automationexercise.com\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC11_NurayStepDef.launchBrowserNavigateTo(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 646787000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Verify that home page is visible \u0027Automation Exercise\u0027 successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Automation Exercise\u0027",
+                  "offset": 38
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC11_NurayStepDef.userVerifyThatHomePageIsVisibleAutomationExerciseSuccessfully(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1844112000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Click \u0027 Signup / Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027 Signup / Login\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC11_NurayStepDef.userClickCartButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4141901000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User login the app",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.userLoginTheApp()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2335406000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Click \u0027 Products\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027 Products\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC11_NurayStepDef.userClickCartButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1008444000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Hover over 1 first product and click Add to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.hoverOverFirstProductAndClickAddToCart(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1201744000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Click \u0027Continue Shopping\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Continue Shopping\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC11_NurayStepDef.userClickCartButton(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286533000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Hover over 2 second product and click Add to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.hoverOverSecondProductAndClickAddToCart(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1797658000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Click \u0027View Cart\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027View Cart\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC11_NurayStepDef.userClickCartButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 581675000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify 1 and 2 both products are added to Cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 7
+                },
+                {
+                  "val": "2",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.verifyAndBothProductsAreAddedToCart(int,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c900\u003e but was:\u003c1800\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\n\tat org.junit.Assert.assertEquals(Assert.java:118)\n\tat org.junit.Assert.assertEquals(Assert.java:555)\n\tat org.junit.Assert.assertEquals(Assert.java:542)\n\tat stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.verifyTheirPricesQuantityAndTotalPrice(TC12_NurayStepDef.java:34)\n\tat ✽.Verify their prices, quantity and total price(file:///Users/tugbadagli/IdeaProjects/AutomationExercise/./src/test/resources/features/ui_features/TC12_Nuray.feature:16)\n",
+              "duration": 839777000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "Verify their prices, quantity and total price",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC12_NurayStepDef.verifyTheirPricesQuantityAndTotalPrice()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "US012",
+    "description": "",
+    "id": "us012",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC12_Nuray.feature",
+    "tags": [
+      {
+        "name": "@smokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:53:58.526Z",
+        "line": 25,
+        "name": "",
+        "description": "",
+        "id": "tc15;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "TC15",
+    "description": "",
+    "id": "tc15",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC15_Nuray.feature",
+    "tags": [
+      {
+        "name": "@smokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
