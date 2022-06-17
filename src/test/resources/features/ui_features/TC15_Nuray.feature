@@ -1,23 +1,5 @@
 Feature: TC15
 
-#  Scenario:
-#    Given Launch browser Navigate to url 'http://automationexercise.com'
-#    Then Verify that home page is visible successfully
-#    And User Click ' Signup / Login' button
-#    Then Fill all details in Signup and create account
-#    Then Verify 'ACCOUNT CREATED!' and click 'Continue' button
-#    Then Verify 'Kike' at top
-#    And Add products to cart
-#    Then Click 'View Cart' button Verify that cart page is displayed
-#    Then Click Proceed To Checkout Verify Address Details and Review Your Order
-#    And Enter description in comment text area and click Place Order
-#    Then Enter payment details: Name on Card, Card Number, CVC, Expiration date
-#    And Click 'Pay and Confirm Order' button
-#    Then Verify success message 'Your order has been placed successfully!' is visible
-#    And Click 'Delete Account' button
-#    Then Verify 'ACCOUNT DELETED!' and click 'Continue' button
-#
-
   Scenario Outline:
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Then Verify that home page is visible successfully
@@ -31,9 +13,10 @@ Feature: TC15
     And Enter description in comment text area and click Place Order
     Then Enter payment details: "<NameCard>","<CardNumber>","<cvc>", "<ExpirationDate>", "<ExpirationYear>"
     Then User Click Pay and Confirm Order button
-    Then Verify Success Message 'Your order has been placed successfully!' is visible
-     And user click Delete Account button
-     Then verify Account Deleted! is visible and click continue
+    And Verify success message 'Your order has been placed successfully!'
+    And User Click 'Delete Account' button in the payment page
+    Then User Verify 'ACCOUNT DELETED!' and click 'Continue' button
+
 
   Examples:
     | NameCard      | CardNumber      | cvc | ExpirationDate | ExpirationYear | Name |

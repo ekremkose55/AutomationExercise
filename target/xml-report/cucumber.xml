@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.744">
     <testcase classname="Registration" name="Register new user" time="24.505">
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.979">
+    <testcase classname="Login" name="login with valid credentials" time="16.598">
+>>>>>>> master
         <system-out>
             <![CDATA[Given user goes to the url "https://www.automationexercise.com".............passed
 And user verify home page is visibly........................................passed
 Then user click 'Signup/Login' button.......................................passed
+<<<<<<< HEAD
 And user verify 'New User Signup!' is visible...............................passed
 And user enter name and email as "<name>" , "<email>".......................passed
 Then user click Signup button...............................................passed
@@ -19,7 +26,21 @@ And click continue button...................................................pass
 Then verify Logged in as username is visible................................passed
 When user click Delete Account button.......................................passed
 Then verify Account Deleted! is visible and click continue..................passed
+=======
+Then verify login to your account is visible................................passed
+And user enter correct email and password as "alexprit345@gmail.com" , "abc321".passed
+And user click login button.................................................passed
+Then verify Logged in as username...........................................passed
+When user click Delete Account button.......................................passed
+Then verify Account Deleted! is visible.....................................passed
+>>>>>>> master
 ]]>
         </system-out>
     </testcase>
 </testsuite>
+<<<<<<< HEAD
+=======
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.152"/>
+>>>>>>> master
+>>>>>>> master

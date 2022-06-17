@@ -98,9 +98,6 @@ public class TC15_NurayStepDef {
 
 
 
-
-
-
     }
 
     @And("Enter description in comment text area and click Place Order")
@@ -133,15 +130,8 @@ public class TC15_NurayStepDef {
 
 
 
-   }
 
-      @Then("Verify Success Message {string} is visible")
-      public void verifySuccessMessageYourOrderHasBeenPlacedSuccessfullyIsVisible(String text) {
-        ReusableMethods.waitFor(2);
-       // Assert.assertTrue(productsPage.paySuccessText.getText().contains(text));
-          ReusableMethods.waitFor(2);
-         System.out.println(productsPage.paySuccessText.getText());
-       Assert.assertTrue(productsPage.paySuccessText.isDisplayed());
+
 
 
 
