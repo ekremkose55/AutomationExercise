@@ -1,9 +1,170 @@
 [
   {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-17T02:34:16.264Z",
+        "line": 4,
+        "name": "TC05 Register User with existing email",
+        "description": "",
+        "id": "register-user-with-existing-email;tc05-register-user-with-existing-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38854000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigate to url \u0027http://automationexercise.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://automationexercise.com\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify that home page is visible successfully",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_that_home_page_is_visible_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2330000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on \u0027Signup / Login\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup / Login\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify \u0027New User Signup!\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027New User Signup!\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_is_visible(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3265000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter name and already registered email address",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.enter_name_and_already_registered_email_address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1511000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click \u0027Signup\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Signup\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify error \u0027Email Address already exist!\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Email Address already exist!\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_error_is_visible(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@error_email"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Register User with existing email",
+    "description": "",
+    "id": "register-user-with-existing-email",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/TC05_Ekrem.feature",
+    "tags": [
+      {
+        "name": "@error_email",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  },
+  {
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-17T01:27:09.417Z",
+        "start_timestamp": "2022-06-17T02:35:02.882Z",
         "line": 3,
         "name": "TC06 Contact Us Form",
         "description": "",
@@ -13,7 +174,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25580000000,
+              "duration": 3079000000,
               "status": "passed"
             },
             "line": 4,
@@ -31,103 +192,137 @@
           },
           {
             "result": {
-              "duration": 373000000,
+              "duration": 591000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Verify that categories are visible on left side bar",
+            "name": "Verify that home page is visible successfully",
             "match": {
-              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_that_categories_are_visible_on_left_side_bar()"
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_that_home_page_is_visible_successfully()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-6F4KRPQA\u0027, ip: \u002710.0.4.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)\r\n\tat java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:42)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\tat stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_category(TC05_Ekrem_StepDef.java:107)\r\n\tat ✽.Click on \u0027Women\u0027 category(file:///C:/Users/ekrem/IdeaProjects/AutomationExercise2022/./src/test/resources/features/ui_features/TC18_Ekrem.feature:6)\r\n\tSuppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-6F4KRPQA\u0027, ip: \u002710.0.4.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\t\tat org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)\r\n\t\tat org.openqa.selenium.json.Json.toJson(Json.java:44)\r\n\t\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\t\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\t\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\t\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\t\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\t\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\t\tat stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_category(TC05_Ekrem_StepDef.java:107)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\t\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\t\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\t\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\t\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\t\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\t\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\t\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\t\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\t\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\t\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\t\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\t\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\t\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\t\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\t\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\t\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\t\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\t\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\t\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\t\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\t\tat org.junit.runner.JUnitCore.run(JUnitCore.java:160)\r\n\t\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\t\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\t\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\t\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)\r\n\tat java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:42)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\tat stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_category(TC05_Ekrem_StepDef.java:107)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:160)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[text()\u003d\u0027Women\u0027) because of the following error:\nSyntaxError: Failed to execute \u0027evaluate\u0027 on \u0027Document\u0027: The string \u0027//*[text()\u003d\u0027Women\u0027)\u0027 is not a valid XPath expression.\n  (Session info: chrome\u003d102.0.5005.115)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-6F4KRPQA\u0027, ip: \u002710.0.4.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\ekrem\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d940a35ff8d81e07db5969aedf99ecac\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Women\u0027)}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)\r\n\tat org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)\r\n\tat org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)\r\n\tat org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)\r\n\t... 65 more\r\n",
-              "duration": 3574000000,
-              "status": "failed"
+              "duration": 875000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "Click on \u0027Women\u0027 category",
+            "name": "Click on \u0027Contact Us\u0027 button sign",
             "match": {
               "arguments": [
                 {
-                  "val": "\u0027Women\u0027",
+                  "val": "\u0027Contact Us\u0027",
                   "offset": 9
                 }
               ],
-              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_category(java.lang.String)"
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_button_sign(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 925000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "Click on any category link under \u0027Women\u0027 category, for example: Dress",
+            "name": "Verify \u0027GET IN TOUCH\u0027 is visible text",
             "match": {
               "arguments": [
                 {
-                  "val": "\u0027Women\u0027",
-                  "offset": 33
+                  "val": "\u0027GET IN TOUCH\u0027",
+                  "offset": 7
                 }
               ],
-              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_on_any_category_link_under_category_for_example_dress(java.lang.String)"
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_is_visible_text(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 622000000,
+              "status": "passed"
             },
             "line": 8,
-            "name": "Verify that category page is displayed and confirm text \u0027WOMEN - TOPS PRODUCTS\u0027",
+            "name": "Enter name, email, subject and message",
             "match": {
-              "arguments": [
-                {
-                  "val": "\u0027WOMEN - TOPS PRODUCTS\u0027",
-                  "offset": 56
-                }
-              ],
-              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_that_category_page_is_displayed_and_confirm_text(java.lang.String)"
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.enter_name_email_subject_and_message()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "On left side bar, click on any sub-category link of \u0027Men\u0027 category",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u0027Men\u0027",
-                  "offset": 52
-                }
-              ],
-              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.on_left_side_bar_click_on_any_sub_category_link_of_category(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 5266000000,
+              "status": "passed"
             },
             "line": 10,
-            "name": "Verify that user is navigated to that category page",
+            "name": "Click \u0027Submit\u0027 button sign",
             "match": {
-              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_that_user_is_navigated_to_that_category_page()"
+              "arguments": [
+                {
+                  "val": "\u0027Submit\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_button_sign(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Press OK to proceed!}\n  (Session info: chrome\u003d102.0.5005.115): Press OK to proceed!\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-6F4KRPQA\u0027, ip: \u002710.0.4.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\ekrem\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 39ab7bd865cc0ac23dd7a809b97e0655\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\r\n\tat utilities.Driver.getDriver(Driver.java:62)\r\n\tat stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.users_click_ok_button(TC05_Ekrem_StepDef.java:83)\r\n\tat ✽.Users Click OK button(file:///C:/Users/ekrem/IdeaProjects/AutomationExercise2022/./src/test/resources/features/ui_features/TC06_Ekrem.feature:11)\r\n",
+              "duration": 306000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "Users Click OK button",
+            "match": {
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.users_click_ok_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Verify success message \u0027Success! Your details have been submitted successfully.\u0027 is visible",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Success! Your details have been submitted successfully.\u0027",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.verify_success_message_is_visible(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Click \u0027Home\u0027 button and verify that landed to home page successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.ui_stepdefinitions.TC05_Ekrem_StepDef.click_button_and_verify_that_landed_to_home_page_successfully(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@category_page_verify"
+            "name": "@contactUs_verify"
+          },
+          {
+            "name": "@wip"
           }
         ]
       }
@@ -136,14 +331,22 @@
     "description": "",
     "id": "contact-us-form",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ui_features/TC18_Ekrem.feature",
+    "uri": "file:src/test/resources/features/ui_features/TC06_Ekrem.feature",
     "tags": [
       {
-        "name": "@category_page_verify",
+        "name": "@contactUs_verify",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 19
         }
       }
     ]

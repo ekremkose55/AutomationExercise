@@ -1,4 +1,4 @@
-@error_email
+@error_email @wip
 
 Feature: Register User with existing email
   Scenario: TC05 Register User with existing email

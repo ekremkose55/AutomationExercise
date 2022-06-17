@@ -1,4 +1,4 @@
-@contactUs_verify
+@contactUs_verify @wip
 Feature: Contact Us Form
   Scenario: TC06 Contact Us Form
     Given Navigate to url 'http://automationexercise.com'
