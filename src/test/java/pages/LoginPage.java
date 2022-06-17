@@ -43,7 +43,10 @@ public class LoginPage {
     public WebElement nameInput;
 
     @FindBy(xpath = "(//input[@name='email'])[1]")
-    public WebElement emailInput;
+    public WebElement emailInput1;
+
+    @FindBy(xpath = "(//input[@name='email'])[2]")
+    public WebElement emailInput2;
 
     @FindBy(xpath = "//input[@type='password']")
     public WebElement passwordInput;

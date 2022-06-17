@@ -47,6 +47,41 @@ public class ProductsPage {
     @FindBy(xpath = "(//button[@class='disabled'])[2]")
     public WebElement secondQuantity;
 
+    @FindBy(xpath = "//h2//b")
+    public WebElement accountCreated;
+
+
+    @FindBy(xpath = "//h2[text()='Address Details']")
+    public WebElement addressDetail;
+
+    @FindBy(xpath = "//h2[text()='Review Your Order']")
+    public WebElement reviewOrder;
+
+    @FindBy(xpath = "//textarea[@name='message']")
+    public WebElement testArea;
+
+    @FindBy(xpath = "//a[text()='Place Order']")
+    public WebElement placeOrder;
+
+    @FindBy(xpath = "//input[@name='name_on_card']")
+    public WebElement nameCard;
+
+    @FindBy(xpath = "//input[@name='card_number']")
+    public WebElement cardNum;
+
+    @FindBy(xpath = "//input[@name='cvc']")
+    public WebElement cvcNum;
+
+    @FindBy(xpath = "//input[@name='expiry_month']")
+    public WebElement expDate;
+
+    @FindBy(xpath = "//input[@name='expiry_year']")
+    public WebElement expYear;
+
+    @FindBy(xpath = "//button[@id='submit']")
+    public WebElement payButton;
+
+
 
     @FindBy(xpath = "//*[contains(text(), ' Products')]")
     public WebElement productsButton;
@@ -79,6 +114,47 @@ public class ProductsPage {
     public WebElement brandProductsTitle;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Esen
+    @FindBy(xpath = "(//*[text()='View Product'])[3]")
+    public WebElement viewProduct;
+
+    @FindBy(xpath = "//*[text()='Write Your Review']")
+    public WebElement writeYourReview;
+
+    @FindBy(xpath = "//input[@id='name']")
+    public WebElement yourName;
+
+    @FindBy(xpath = "//input[@id='email']")
+    public WebElement emailAddress;
+
+    @FindBy(xpath = "//textarea[@id='review']")
+    public WebElement addReview;
+
+    @FindBy(xpath = "//button[@id='button-review']")
+    public WebElement submit;
+
+    @FindBy(xpath = "//*[text()='Thank you for your review.']")
+    public WebElement successMessage;
 
 }
 
