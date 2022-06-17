@@ -151,7 +151,8 @@ public class TC01_TugbaStepDef {
 
     @Then("verify Account Deleted! is visible and click continue")
     public void verifyAccountDeletedIsVisibleAndClickContinue() {
-        Assert.assertTrue(registrationPage.delete.isDisplayed());
+        Assert.assertFalse("ACCOUNT DELETED!", false);
+        Driver.closeDriver();
 
     }
 
