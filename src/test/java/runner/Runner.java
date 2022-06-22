@@ -16,12 +16,11 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = {"stepdefinitions", "Hook"},  //MUST
-        tags = "@verifytest",
+        tags = "@contactUs_verify",
 
         dryRun = false
 
 )
-
 public class Runner {
 }
 
