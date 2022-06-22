@@ -122,9 +122,11 @@ public class TC15_NurayStepDef {
 
     @Then("User Click Pay and Confirm Order button")
     public void userClickPayAndConfirmOrderButton() {
-        ReusableMethods.waitFor(1);
-        productsPage.payButton.click();
-        ReusableMethods.waitFor(2);
+//        ReusableMethods.waitFor(1);
+//        productsPage.payButton.click();
+//        ReusableMethods.waitFor(2);
+        ReusableMethods.fluentWait(productsPage.payButton, 3);
+
 
 
 

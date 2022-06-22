@@ -1,7 +1,7 @@
-@TC14
+@smokeTest
 Feature: TC14
 
-  Scenario:
+  Scenario:TC14
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Then User Verify that home page is visible 'Automation Exercise' successfully
     Then Verify that home page is visible successfully

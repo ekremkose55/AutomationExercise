@@ -10,19 +10,19 @@ import utilities.Driver;
 public class Hook {
 
 
-    @Before
-    public void setUp(){
-//        RUNS BEFORE EACH SCENARIO
-        System.out.println("Before Hooks");
-    }
-    @After
-    public void tearDown(Scenario scenario){
-        if (scenario.isFailed()) {
-            final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-//            Is a scenario fails, then take the screenshot!!!!!
-            scenario.attach(screenshot, "image/png","screenshots");
-        }
-       Driver.closeDriver();
-    }
+//    @Before
+//    public void setUp(){
+////        RUNS BEFORE EACH SCENARIO
+//        System.out.println("Before Hooks");
+//    }
+//    @After
+//    public void tearDown(Scenario scenario){
+//        if (scenario.isFailed()) {
+//            final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+////            Is a scenario fails, then take the screenshot!!!!!
+//            scenario.attach(screenshot, "image/png","screenshots");
+//        }
+//       Driver.closeDriver();
+//    }
 
 }

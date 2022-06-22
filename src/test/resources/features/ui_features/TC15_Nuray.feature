@@ -1,7 +1,7 @@
-#@smokeTest
+
 Feature: TC15
 
-  Scenario Outline:
+  Scenario Outline:TC15
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Then Verify that home page is visible successfully
     And User Click ' Signup / Login' button

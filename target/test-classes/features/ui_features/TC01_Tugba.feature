@@ -1,6 +1,6 @@
 Feature: Registration
 
-  @UIregisteration
+  @UIregisteration @smokeTest
   Scenario Outline: Register new user
   Given user goes to the url "https://www.automationexercise.com"
   And user verify home page is visibly

@@ -131,6 +131,7 @@ public class TC14_EsenStepDef {
     @Then("User Verify {string} and click {string} button")
     public void userVerifyACCOUNTDELETEDAndClickContinueButton(String arg01, String arg02) {
         Assert.assertFalse("ACCOUNT DELETED!", false);
+        Driver.closeDriver();
     }
 
 }
