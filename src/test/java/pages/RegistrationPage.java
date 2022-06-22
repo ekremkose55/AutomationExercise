@@ -13,7 +13,6 @@ public class RegistrationPage {
 
     }
 
-
     @FindBy(xpath = "//*[contains(text(), 'Home')]")
     public WebElement verifyHomePage;
 
@@ -28,7 +27,6 @@ public class RegistrationPage {
 
     @FindBy(xpath = "(//input[@name='email'])[2]")
     public WebElement email;
-
 
     @FindBy(xpath = "//*[text()='Signup']")
     public WebElement verifySignup;
@@ -108,12 +106,6 @@ public class RegistrationPage {
     @FindBy(xpath = "(//*[contains(text(), 'Delete')])[4]")
     public WebElement delete;
 
-
-
-
-
-
-
     @FindBy(xpath = "//*[@class='nav navbar-nav']")
     public WebElement homePage;
 
@@ -135,8 +127,34 @@ public class RegistrationPage {
     @FindBy(xpath = "//*[.='Email Address already exist!']")
     public WebElement emailVerifyText;
 
+    @FindBy(xpath = "//i[@class='fa fa-envelope']")
+    public WebElement contactUsButton;
 
+    @FindBy(xpath = "//*[.='Get In Touch']")
+    public WebElement getInTouchText;
 
+    @FindBy(name = "name")
+    public WebElement nameTestBox;
 
+    @FindBy(name = "email")
+    public WebElement emailTestBox;
+
+    @FindBy(name = "subject")
+    public WebElement subjectTestBox;
+
+    @FindBy(id = "message")
+    public WebElement messageTestBox;
+
+    @FindBy(name = " upload_file")
+    public WebElement uploadFile;
+
+    @FindBy(xpath = "//input[@name='submit']")
+    public WebElement submitbutton;
+
+    @FindBy(xpath = "//*[.='Category']")
+    public WebElement categoryBar;
+
+    @FindBy(xpath ="//*[text()='Women')")
+    public WebElement womenButton;
 
 }

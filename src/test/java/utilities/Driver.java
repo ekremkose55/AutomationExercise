@@ -19,17 +19,6 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
-
-
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 
 
 public class Driver {
@@ -39,7 +28,7 @@ public class Driver {
     private static WebDriver driver;
     public static WebDriver getDriver(){
         if(driver==null) {
-            String browser = ConfigReader.getProperty("browser");
+            String browser = ConfigurationReader.getProperty("browser");
             if ("chrome".equals(browser)) {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
@@ -314,11 +303,6 @@ public class Driver {
     //Driver classi farkli browserlar(tarayici) ile de kullanacagimiz sekilde olusturacagiz.
 
 
-
-
-
-
-
     public static void closedDriver(){
         if(driver!=null){  //Eger driver chrome'u isaret ediyorsa
             driver.quit();   // driver'i kapat!
@@ -327,7 +311,11 @@ public class Driver {
         }                 // Multi browser (chrome,firefox,ie vb) test yaparken bu onemli olacaktir
     }
 
-
+    //========Hover Over=====//
+    public static void hover(WebElement element) {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(element).perform();
+    }
 
 }
 
