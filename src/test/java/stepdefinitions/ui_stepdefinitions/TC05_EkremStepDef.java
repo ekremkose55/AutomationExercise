@@ -13,7 +13,8 @@ public class TC05_EkremStepDef {
 
     @Given("Navigate to url {string}")
     public void navigate_to_url(String string) {
-    Driver.getDriver().get(ConfigurationReader.getProperty("url")); }
+    Driver.getDriver().get(ConfigurationReader.getProperty("url")); 
+    Driver.wait(2);}
 
     @When("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
