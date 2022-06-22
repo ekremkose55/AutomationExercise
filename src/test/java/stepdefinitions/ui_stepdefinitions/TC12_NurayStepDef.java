@@ -1,15 +1,10 @@
 package stepdefinitions.ui_stepdefinitions;
 
-import io.cucumber.java.bs.A;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.HomePage;
 import pages.LoginPage;
 import pages.ProductsPage;
-import utilities.ConfigReader;
-import utilities.Driver;
+import utilities.ConfigurationReader;
 import utilities.ReusableMethods;
 
 public class TC12_NurayStepDef {
@@ -36,20 +31,14 @@ public class TC12_NurayStepDef {
         Assert.assertTrue(productsPage.firstQuantity.getText().contains("1"));
         Assert.assertTrue(productsPage.secondQuantity.getText().contains("1"));
 
-
-
-
-
-
-
     }
 
 
     @Then("User login the app")
     public void userLoginTheApp() {
-        loginPage.emailInput1.sendKeys(ConfigReader.getProperty("email"));
+        loginPage.emailInput1.sendKeys(ConfigurationReader.getProperty("email"));
         ReusableMethods.waitFor(1);
-        loginPage.passwordInput.sendKeys(ConfigReader.getProperty("password"));
+        loginPage.passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
         loginPage.loginButton.click();
 
 

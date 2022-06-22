@@ -1,7 +1,6 @@
 package stepdefinitions.ui_stepdefinitions;
 
 import com.github.javafaker.Faker;
-import com.github.javafaker.Name;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,7 +12,7 @@ import pages.CheckoutPage;
 import pages.HomePage;
 import pages.ProductsPage;
 import pages.RegistrationPage;
-import utilities.ConfigReader;
+import utilities.ConfigurationReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
@@ -107,10 +106,10 @@ public class TC14_EsenStepDef {
     @And("Enter payment details: {string}, {string}, {string}, {string}")
     public void enterPaymentDetailsNameOnCardCardNumberCVCExpirationDate(String txt1, String txt2, String txt3, String txt4) {
         checkoutPage.nameOnCard.sendKeys(faker.name().name());
-        checkoutPage.cardNumber.sendKeys(ConfigReader.getProperty("cardNumber"));
+        checkoutPage.cardNumber.sendKeys(ConfigurationReader.getProperty("cardNumber"));
         checkoutPage.cvc.sendKeys(faker.number().digits(3));
-        checkoutPage.expiryMonth.sendKeys(ConfigReader.getProperty("expiryMonth"));
-        checkoutPage.expiryYear.sendKeys(ConfigReader.getProperty("expiryYear"));
+        checkoutPage.expiryMonth.sendKeys(ConfigurationReader.getProperty("expiryMonth"));
+        checkoutPage.expiryYear.sendKeys(ConfigurationReader.getProperty("expiryYear"));
 
     }
 

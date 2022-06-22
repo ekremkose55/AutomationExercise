@@ -19,17 +19,6 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
-
-
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 
 
 public class Driver {
@@ -39,7 +28,7 @@ public class Driver {
     private static WebDriver driver;
     public static WebDriver getDriver(){
         if(driver==null) {
-            String browser = ConfigReader.getProperty("browser");
+            String browser = ConfigurationReader.getProperty("browser");
             if ("chrome".equals(browser)) {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
@@ -312,11 +301,6 @@ public class Driver {
     //Ihtiyacimiz oldugunda driver'i kurmak ve baslatmak icin kullaniriz.
     //Driver null oldugunda create edip baslatacagiz.(if driver==null)
     //Driver classi farkli browserlar(tarayici) ile de kullanacagimiz sekilde olusturacagiz.
-
-
-
-
-
 
 
     public static void closedDriver(){

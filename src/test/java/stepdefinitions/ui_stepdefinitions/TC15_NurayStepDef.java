@@ -8,11 +8,9 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.ProductsPage;
 import pages.RegistrationPage;
-import utilities.ConfigReader;
+import utilities.ConfigurationReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
-import java.sql.SQLOutput;
 
 public class TC15_NurayStepDef {
     LoginPage loginPage= new LoginPage();
@@ -25,8 +23,8 @@ public class TC15_NurayStepDef {
     public void fillAllDetailsInSignupAndCreateAccount() {
 //        Name=faker.name().firstName();
 //        email=faker.internet().emailAddress();
-        loginPage.nameInput.sendKeys(ConfigReader.getProperty("accountName"));
-        loginPage.emailInput2.sendKeys(ConfigReader.getProperty("accountEmail"));
+        loginPage.nameInput.sendKeys(ConfigurationReader.getProperty("accountName"));
+        loginPage.emailInput2.sendKeys(ConfigurationReader.getProperty("accountEmail"));
         loginPage.signUpButton.click();
         regPage.title.click();
         regPage.password.sendKeys(faker.internet().password());
@@ -58,7 +56,7 @@ public class TC15_NurayStepDef {
     @Then("Verify {string} at top")
     public void verifyLoggedInAsUsernameAtTop(String Name) {
         System.out.println(homePage.upAccountName.getText());
-      Assert.assertEquals(homePage.upAccountName.getText(),ConfigReader.getProperty(Name));
+      Assert.assertEquals(homePage.upAccountName.getText(),ConfigurationReader.getProperty(Name));
 
     }
 
@@ -127,11 +125,6 @@ public class TC15_NurayStepDef {
         ReusableMethods.waitFor(1);
         productsPage.payButton.click();
         ReusableMethods.waitFor(2);
-
-
-
-
-
 
 
 
