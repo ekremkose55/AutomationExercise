@@ -1,7 +1,7 @@
-@smokeTest
+@smokeTest  @incorrectVerify
 Feature: Login with incorrect credentials
 
-  @incorrectVerify
+
   Scenario: Login with incorrect credentials
     Given user goes to the url "https://www.automationexercise.com"
     And user verify home page is visibly
