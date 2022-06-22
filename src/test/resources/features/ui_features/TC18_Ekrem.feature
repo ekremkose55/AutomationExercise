@@ -1,6 +1,6 @@
-@category_page_verify
-Feature: Contact Us Form
-  Scenario: TC06 Contact Us Form
+@categoryTest
+Feature: Verify category page
+  Scenario: TC18 User verify category page
     Given Navigate to url 'http://automationexercise.com'
     When Verify that categories are visible on left side bar
     When Click on 'Women' category
@@ -11,4 +11,3 @@ Feature: Contact Us Form
 
 
 
-g

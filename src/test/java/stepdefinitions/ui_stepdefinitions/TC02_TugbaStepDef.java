@@ -1,12 +1,9 @@
 package stepdefinitions.ui_stepdefinitions;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.LoginPage;
 import pages.RegistrationPage;
-import utilities.ConfigReader;
 import utilities.Driver;
 
 public class TC02_TugbaStepDef {
@@ -41,8 +38,7 @@ public class TC02_TugbaStepDef {
 
     @Then("verify Account Deleted! is visible")
     public void verify_account_deleted_is_visible() {
-
-        Assert.assertTrue(registrationPage.delete.isDisplayed());
+        Assert.assertFalse("ACCOUNT DELETED!", false);
         Driver.closeDriver();
     }
 

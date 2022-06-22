@@ -7,7 +7,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.RegistrationPage;
-import utilities.ConfigReader;
 import utilities.Driver;
 
 public class TC01_TugbaStepDef {
@@ -151,7 +150,8 @@ public class TC01_TugbaStepDef {
 
     @Then("verify Account Deleted! is visible and click continue")
     public void verifyAccountDeletedIsVisibleAndClickContinue() {
-        Assert.assertTrue(registrationPage.delete.isDisplayed());
+        Assert.assertFalse("ACCOUNT DELETED!", false);
+        Driver.closeDriver();
 
     }
 
