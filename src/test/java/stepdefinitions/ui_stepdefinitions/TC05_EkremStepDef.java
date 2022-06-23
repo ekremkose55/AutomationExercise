@@ -44,13 +44,12 @@ public class TC05_EkremStepDef {
     @Then("Verify error {string} is visible")
     public void verify_error_is_visible(String string) {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        Assert.assertTrue(autoPage.emailVerifyText.isDisplayed()); }
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        Assert.assertTrue(autoPage.emailVerifyText.isDisplayed()); 
+    }
 
     //----------------------TC06 Codes--------------------------------------------------------------
-
     //----------------------TC18 Codes------------------------------------------------------------------------
-
-
     //-------------------TC23 Codes -------------------------------------------------------
 
 
